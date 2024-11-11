@@ -133,8 +133,8 @@
             background-color: #f9f9f9;
             padding: 40px;
             margin: 30px auto;
-            width: 130%;
-            max-width: 600px;
+            width: 100%; /* Volle Breite, wenn der Bildschirm klein ist */
+            max-width: 900px; /* Maximal auf 900px breiten Textblock */
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;  /* Zentriert den Inhalt */
@@ -150,7 +150,7 @@
         /* Stil für das Textfeld */
         .text-field {
             width: 100%;
-            height: 900px;
+            height: 500px;  /* Die Höhe auf mobilen Geräten kann ebenfalls angepasst werden */
             padding: 20px;
             font-size: 16px;
             color: #333;
@@ -159,7 +159,38 @@
             border-radius: 8px;
             resize: none;  /* Verhindert, dass das Textfeld manuell vergrößert wird */
             box-sizing: border-box;  /* Stellt sicher, dass Padding und Border in die Gesamtgröße einbezogen werden */
+            text-align: justify;
         }
+
+        /* Media Query für kleine Bildschirme (z.B. Smartphones) */
+        @media (max-width: 768px) {
+            /* Reduziert die Höhe des Textfeldes auf kleineren Geräten */
+            .text-field {
+                height: 300px; /* Kleinere Höhe auf Smartphones */
+            }
+
+            /* Verkleinert die Schriftgröße der Überschrift */
+            .text-block h2 {
+                font-size: 28px;  /* Kleinere Schriftgröße auf mobilen Geräten */
+            }
+
+            /* Reduziert das Padding des Textblocks auf kleinen Geräten */
+            .text-block {
+                padding: 20px; /* Weniger Abstand um den Textblock */
+            }
+        }
+
+        /* Optional: Media Query für sehr kleine Bildschirme (z.B. kleinere Smartphones) */
+        @media (max-width: 480px) {
+            .text-block h2 {
+                font-size: 24px; /* Noch kleinere Schriftgröße auf sehr kleinen Geräten */
+            }
+
+            .text-field {
+                height: 200px; /* Noch kleinere Höhe für sehr kleine Bildschirme */
+            }
+        }
+
 
         /* Optional: Stil für den Fokus des Textfeldes */
         .text-field:focus {
@@ -281,7 +312,7 @@
 <!-- Galerie mit vier Bildern -->
 <div class="image-gallery">
     <div class="gallery-item">
-        <img src="https://via.placeholder.com/150" alt="Bild 1" class="gallery-thumbnail" onclick="openGallery(0)">
+        <img src="IMG_3370.HEIC" alt="Bild 1" class="gallery-thumbnail" onclick="openGallery(0)">
     </div>
     <div class="gallery-item">
         <img src="https://via.placeholder.com/150" alt="Bild 2" class="gallery-thumbnail" onclick="openGallery(1)">
@@ -302,10 +333,10 @@
     </div>
 </div>
 
-
-<div id="about" class="section">
+<div id="warumoliamo" class="text-block">
     <h2>Warum oliamo?</h2>
-    <p>Aus dem Olivenhain von Opa Totó bringen wir euch die Sonne Siziliens auf den Tisch. Opa Totó hat in San Cipirello eine gute Mischung aus 
+    <textarea readonly class="text-field">
+        Aus dem Olivenhain von Opa Totó bringen wir euch die Sonne Siziliens auf den Tisch. Opa Totó hat in San Cipirello eine gute Mischung aus 
         Nocelara del Belice (30 %), Cirasola (30 %), Biancolila (30 %) und Calamignana (10 %) Olivenbäumen gepflanzt. Er hat sie erzogen und den 
         Nachkommen überlassen die sich seit dem um den Olivenhain kümmern. Die Bäume sind bis auf die regelmäßigen notwendigen Rückschnitte naturbelassen 
         und werden nicht gedüngt, gespritzt oder in anderer Art und weiße behandelt. 
@@ -318,7 +349,21 @@
         Dank unserer minimalistischen Pflege wachsen und gedeihen die Oliven frei und ungestört, was sich in der Reinheit und dem charakteristischen 
         Geschmack unseres Öls widerspiegelt. Zusammen mit dem Frantolio aus San Giuseppe Jato haben wir daraus ein wunderbar kräftiges aber ausgewogenes 
         Olivenöl entwickelt.Durch die direkte lokale Verarbeitung und kalte Pressung der Oliven bei 25 °C haben wir ein extra vergines Olivenöl produziert. 
-        Mehr zu dem Produktionsprozess könnt ihr hier lesen.</p>
+        Mehr zu dem Produktionsprozess könnt ihr hier lesen.
+    </textarea>
+</div>
+<div id="about" class="section">
+    <h2>Warum oliamo?</h2>
+    <p>Die besondere Mischung der Oliven aus dem Hain von Opa Totó machen unser extra vergines Olivenöl zu einem wahren Genuss. Während dem 
+        Produktionsprozess arbeiten wir mit vielen Menschen zusammen und wollen auch zukünftig mit euch ein ökologisch wertvolles und nachhaltig 
+        produziertes Olivenöl erzeugen. 
+        Oliamo steht genau dafür. 
+        Der Name unseres Olivenöls setzt sich zusammen aus Teilen des Wortes Oliva (Oli) und der Verbform etwas gemeinsam zu machen (iamo) zusammen. 
+        Zudem beinhaltet es das Wort amo (liebe) das Elena und Justus verbindet. In San Cipirello wo sich der Olivenhain von Opa Totó (Elenas Uropa) 
+        befindet, haben schon seit Jahrhunderten die Menschen unterschiedlicher Kulturen zusammen gelebt und gewirtschaftet. Die ältesten bekannten 
+        Spuren einer menschlichen Siedlung gehen ins 700 Jahrhundert zurück. Seitdem haben verschiedene Kulturen Sizilien bevölkert und kulturell bereichert.
+         Ein Produkt dieses kulturellen Austauschs ist der Anbau von Oliven und so auch unser Olivenöl. Wir freuen uns, euch durch oliamo in den Austausch 
+         einzubeziehen.</p>
 </div>
 
    <!-- JavaScript für das Menü -->
