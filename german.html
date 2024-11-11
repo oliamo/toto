@@ -9,7 +9,7 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: orange;
+            background-color: rgb(178, 194, 110);
         }
 
         /* Grüner Balken oben mit Menü-Button */
@@ -20,14 +20,16 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: fixed; /* Fixiert den Header am oberen Rand */
         }
 
         .menu-button {
             background-color: white;
-            color: green;
+            color: rgb(110, 156, 110);
             border: none;
             padding: 10px;
             cursor: pointer;
+            position: fixed; /* Fixiert den Header am oberen Rand */
         }
 
         .menu-button:hover {
@@ -41,9 +43,9 @@
             top: 50px;
             right: 0;
             background-color: white;
-            color: green;
+            color: rgb(110, 156, 110);
             width: 200px;
-            border: 1px solid green;
+            border: 1px solid rgb(110, 156, 110);
             padding: 10px;
             z-index: 100;
         }
@@ -51,7 +53,7 @@
         .menu a {
             display: block;
             text-decoration: none;
-            color: green;
+            color: rgb(110, 156, 110);
             padding: 10px 0;
         }
 
@@ -120,7 +122,7 @@
 
         .about h2 {
             font-size: 36px;
-            color: green;
+            color: rgb(55, 104, 55);
         }
 
         .about p {
@@ -130,8 +132,8 @@
 
         /* Stil für den Textblock */
         .text-block {
-            background-color: #f9f9f9;
-            padding: 40px;
+            background-color: #e6e490;
+            padding: 20px;
             margin: 10px auto;
             width: 100%; /* Volle Breite, wenn der Bildschirm klein ist */
             max-width: 900px; /* Maximal auf 900px breiten Textblock */
@@ -161,6 +163,7 @@
             resize: none;  /* Verhindert, dass das Textfeld manuell vergrößert wird */
             box-sizing: border-box;  /* Stellt sicher, dass Padding und Border in die Gesamtgröße einbezogen werden */
             text-align: justify;
+            font: Lexend Deca;
         }
 
         /* Media Query für kleine Bildschirme (z.B. Smartphones) */
@@ -298,38 +301,6 @@
         button:hover {
             background-color: #45a049;
         }
-/* Stil für den Pfeil-Button */
-        .scroll-to-top {
-            position: fixed;
-            bottom: 30px;  /* Abstand vom unteren Rand der Seite */
-            right: 30px;   /* Abstand vom rechten Rand der Seite */
-            background-color: #4CAF50;  /* Hintergrundfarbe */
-            color: white;  /* Schriftfarbe */
-            border: none;
-            border-radius: 50%;
-            font-size: 24px;  /* Schriftgröße des Pfeils */
-            width: 50px;  /* Breite des Buttons */
-            height: 50px;  /* Höhe des Buttons */
-            text-align: center;
-            line-height: 50px;  /* Vertikale Zentrierung des Pfeils */
-            cursor: pointer;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
-        }
-
-        .scroll-to-top:hover {
-            background-color: #45a049;  /* Farbe bei Hover */
-        }
-
-        /* Optional: Stellen Sie sicher, dass der Pfeil nicht angezeigt wird, wenn der Benutzer bereits oben ist */
-        #scrollToTopBtn {
-            display: none; /* Verstecken, wenn nicht gescrollt */
-        }
-
-        /* Button sichtbar machen, wenn der Benutzer scrollt */
-        .show {
-            display: block;
-        }
 
     </style>
 </head>
@@ -345,14 +316,14 @@
 <div id="menu" class="menu">
     <a href="index.html">Home</a>
     <a href="#oel">Das Öl</a> 
-    <a href="#warumoliamo">Warum oliamo</a> 
+    <a href="#warumoliamo">Warum oliamo?</a> 
     <a href="#derprozess">Der Produktionsprozess</a>
     <a href="index.html">Sprache</a>
 </div>
-<a href="#top" class="scroll-to-top" id="scrollToTopBtn">&#8593;</a>
+
 
     <!-- Hauptinhalt -->
-    <div id = "top" class="content">
+    <div class="content">
         <h1>oliamo</h1>
         <img class="circular--square" src="tree.png" alt="Oliamo Logo"/>
         <h1>Herzlich wilkommen bei oliamo!</h1>
@@ -399,11 +370,10 @@ Der Name unseres Olivenöls setzt sich zusammen aus Teilen des Wortes Oliva (Oli
 In San Cipirello wo sich der Olivenhain von Opa Totó (Elenas Uropa) befindet, haben schon seit Jahrhunderten die Menschen unterschiedlicher Kulturen zusammen gelebt und gewirtschaftet. Die ältesten bekannten Spuren einer menschlichen Siedlung gehen ins 700 Jahrhundert zurück. Seitdem haben verschiedene Kulturen Sizilien bevölkert und kulturell bereichert. Ein Produkt dieses kulturellen Austauschs ist der Anbau von Oliven und so auch unser Olivenöl. Wir freuen uns, euch durch oliamo in den Austausch einzubeziehen.
     </textarea>
 </div>
+
+<!-- Kontaktforumal 
 <body>
-
-    <h2>Kontaktformular</h2>
-
-    <!-- Kontaktformular -->
+<h2>Kontaktformular</h2>
     <form action="send_email.php" method="POST">
         <label for="firstname">Vorname:</label>
         <input type="text" id="firstname" name="firstname" required>
@@ -424,6 +394,8 @@ In San Cipirello wo sich der Olivenhain von Opa Totó (Elenas Uropa) befindet, h
     </form>
 
 </body>
+-->
+    
 
 <div id="derprozess" class="text-block">
     <h2>Der Produktionsprozess</h2>
@@ -479,20 +451,6 @@ window.onclick = function(event) {
         closeGallery();
     }
 }
-
-</script>
-<script>
-    // Holen Sie sich den Button
-const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-// Wenn der Benutzer nach unten scrollt, zeigen Sie den Button an
-window.onscroll = function() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        scrollToTopBtn.classList.add("show");
-    } else {
-        scrollToTopBtn.classList.remove("show");
-    }
-};
 
 </script>
 <!--
