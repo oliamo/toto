@@ -133,7 +133,7 @@
             background-color: #f9f9f9;
             padding: 40px;
             margin: 30px auto;
-            width: 80%;
+            width: 90%;
             max-width: 600px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -166,6 +166,70 @@
             border-color: green;
             outline: none;
         }
+
+        /* Stil für die Galerie mit Bildern nebeneinander */
+        .image-gallery {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px; /* Abstand zwischen den Bildern */
+            margin: 40px 0;
+            padding: 0 10px;
+        }
+
+        /* Stil für jedes einzelne Bild in der Galerie */
+        .gallery-item {
+            width: 23%; /* Damit 4 Bilder nebeneinander passen */
+            text-align: center;
+        }
+
+        /* Stil für die kleinen Thumbnails (Bilder in der Galerie) */
+        .gallery-thumbnail {
+            width: 100%;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover-Effekt für die Bilder */
+        .gallery-thumbnail:hover {
+            transform: scale(1.1); /* Bild wird etwas vergrößert, wenn man darüber fährt */
+        }
+
+        /* Modal (große Ansicht) der Bilder */
+        .gallery-modal {
+            display: none; /* Versteckt das Modal standardmäßig */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Dunkler Hintergrund */
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        /* Inhalt des Modals (Bild) */
+        .modal-content {
+            text-align: center;
+        }
+
+        /* Das Bild im Modal */
+        #modal-image {
+            max-width: 90%;
+            max-height: 80%;
+        }
+
+        /* Schließen-Button */
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+            z-index: 1100;
+        }
+
     </style>
 </head>
 <body>
@@ -195,15 +259,10 @@
     
  
 <!-- Hier kommt der Bereich, auf den du im Menü verlinken möchtest -->
-<div id="warum" class=".text-block">
-    <h2>Unsere Philosophie</h2>
-    <textarea readonly class="text-field">Hier können Sie einen kurzen Text über unsere Philosophie oder ein anderes Thema schreiben. 
-        Der Textbereich ist auf die Größe angepasst und in der Mitte der Seite zentriert.</textarea>
-</div>
-
-<div id="oel" class="about">
+<div id="oel" class=".text-block">
     <h2>Das Öl</h2>
-    <p>Aus dem Olivenhain von Opa Totó bringen wir euch die Sonne Siziliens auf den Tisch. Opa Totó hat in San Cipirello eine gute Mischung aus 
+    <textarea readonly class="text-field">
+        Aus dem Olivenhain von Opa Totó bringen wir euch die Sonne Siziliens auf den Tisch. Opa Totó hat in San Cipirello eine gute Mischung aus 
         Nocelara del Belice (30 %), Cirasola (30 %), Biancolila (30 %) und Calamignana (10 %) Olivenbäumen gepflanzt. Er hat sie erzogen und den 
         Nachkommen überlassen die sich seit dem um den Olivenhain kümmern. Die Bäume sind bis auf die regelmäßigen notwendigen Rückschnitte naturbelassen 
         und werden nicht gedüngt, gespritzt oder in anderer Art und weiße behandelt. 
@@ -216,8 +275,33 @@
         Dank unserer minimalistischen Pflege wachsen und gedeihen die Oliven frei und ungestört, was sich in der Reinheit und dem charakteristischen 
         Geschmack unseres Öls widerspiegelt. Zusammen mit dem Frantolio aus San Giuseppe Jato haben wir daraus ein wunderbar kräftiges aber ausgewogenes 
         Olivenöl entwickelt.Durch die direkte lokale Verarbeitung und kalte Pressung der Oliven bei 25 °C haben wir ein extra vergines Olivenöl produziert. 
-        Mehr zu dem Produktionsprozess könnt ihr hier lesen.</p>
+        Mehr zu dem Produktionsprozess könnt ihr hier lesen.
+    </textarea>
 </div>
+<!-- Galerie mit vier Bildern -->
+<div class="image-gallery">
+    <div class="gallery-item">
+        <img src="https://via.placeholder.com/150" alt="Bild 1" class="gallery-thumbnail" onclick="openGallery(0)">
+    </div>
+    <div class="gallery-item">
+        <img src="https://via.placeholder.com/150" alt="Bild 2" class="gallery-thumbnail" onclick="openGallery(1)">
+    </div>
+    <div class="gallery-item">
+        <img src="https://via.placeholder.com/150" alt="Bild 3" class="gallery-thumbnail" onclick="openGallery(2)">
+    </div>
+    <div class="gallery-item">
+        <img src="https://via.placeholder.com/150" alt="Bild 4" class="gallery-thumbnail" onclick="openGallery(3)">
+    </div>
+</div>
+
+<!-- Galerie-Overlay für die größere Ansicht -->
+<div id="gallery-modal" class="gallery-modal">
+    <span class="close-btn" onclick="closeGallery()">&times;</span>
+    <div class="modal-content">
+        <img id="modal-image" src="" alt="Großes Bild">
+    </div>
+</div>
+
 
 <div id="about" class="section">
     <h2>Warum oliamo?</h2>
@@ -247,6 +331,43 @@
     function scrollToLanguage() {
         document.getElementById('language').scrollIntoView({ behavior: 'smooth' });
     }
+</script>
+
+<script>
+    // Bilder für die Galerie (kannst du durch echte URLs ersetzen)
+const images = [
+    "https://via.placeholder.com/600x400?text=Bild+1",
+    "https://via.placeholder.com/600x400?text=Bild+2",
+    "https://via.placeholder.com/600x400?text=Bild+3",
+    "https://via.placeholder.com/600x400?text=Bild+4"
+];
+
+// Funktion, um das Modal zu öffnen
+function openGallery(index) {
+    const modal = document.getElementById("gallery-modal");
+    const modalImage = document.getElementById("modal-image");
+    
+    // Setze das Bild im Modal auf das angeklickte Bild
+    modalImage.src = images[index];
+    
+    // Zeige das Modal an
+    modal.style.display = "flex";
+}
+
+// Funktion, um das Modal zu schließen
+function closeGallery() {
+    const modal = document.getElementById("gallery-modal");
+    modal.style.display = "none";
+}
+
+// Schließt das Modal, wenn der Benutzer außerhalb des Bildes klickt
+window.onclick = function(event) {
+    const modal = document.getElementById("gallery-modal");
+    if (event.target === modal) {
+        closeGallery();
+    }
+}
+
 </script>
 </body>
 </html>
