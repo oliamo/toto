@@ -154,17 +154,7 @@
     </div>
 
     
-    <!-- JavaScript für das Menü -->
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('menu');
-            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-        }
-
-        function scrollToLanguage() {
-            document.getElementById('language').scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
+ 
 <!-- Hier kommt der Bereich, auf den du im Menü verlinken möchtest -->
 <div id="oel" class="section">
     <h2>Das Öl</h2>
@@ -201,5 +191,17 @@
         Olivenöl entwickelt.Durch die direkte lokale Verarbeitung und kalte Pressung der Oliven bei 25 °C haben wir ein extra vergines Olivenöl produziert. 
         Mehr zu dem Produktionsprozess könnt ihr hier lesen.</p>
 </div>
+
+   <!-- JavaScript für das Menü -->
+   <script>
+    function toggleMenu() {
+        const menu = document.getElementById('menu');
+        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function scrollToLanguage() {
+        document.getElementById('language').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
 </body>
 </html>
