@@ -261,6 +261,43 @@
             cursor: pointer;
             z-index: 1100;
         }
+/* Grundlegendes Styling für das Kontaktformular */
+        form {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
 
     </style>
 </head>
@@ -277,13 +314,14 @@
     <a href="index.html">Home</a>
     <a href="#oel">Das Öl</a> 
     <a href="#warumoliamo">Warum oliamo</a> 
+    <a href="#derprozess">Der Produktionsprozess</a>
     <a href="index.html">Sprache</a>
 </div>
 
 
     <!-- Hauptinhalt -->
     <div class="content">
-        <h1>Oliamo</h1>
+        <h1>oliamo</h1>
         <img class="circular--square" src="tree.png" alt="Oliamo Logo"/>
         <h1>Herzlich wilkommen bei oliamo!</h1>
     </div>
@@ -293,8 +331,7 @@
 <!-- Hier kommt der Bereich, auf den du im Menü verlinken möchtest -->
 <div id="oel" class="text-block">
     <h2>Das Öl</h2>
-    <textarea readonly class="text-field">
-        Aus dem Olivenhain von Opa Totó bringen wir euch die Sonne Siziliens auf den Tisch. Opa Totó hat in San Cipirello eine gute Mischung aus Nocelara del Belice (30 %), Cirasola (30 %), Biancolila (30 %) und Calamignana (10 %) Olivenbäumen gepflanzt. Er hat sie erzogen und den Nachkommen überlassen die sich seit dem um den Olivenhain kümmern. Die Bäume sind bis auf die regelmäßigen notwendigen Rückschnitte naturbelassen und werden nicht gedüngt, gespritzt oder in anderer Art und weiße behandelt. Der Olivenbaum ist optimal für den Trockenanbau geeignet und hat biologische Mechanismen entwickelt, um Wassermangel zu tolerieren und auch unter schwierigen klimatischen Bedingungen zu gedeihen. Dennoch benötigt er stets eine minimale Menge an Wasser, die im Olivenhain von Opa Totó ausschließlich vom Himmel kommt. Aus diesem Grund – und besonders bei einem sich verändernden Klima – kann unsere Oliven und somit auch die Ölproduktion variieren. Wenn du ganz oliamo auf deinem Tisch haben möchtest, dann kannst du eine Patenschaft für einen Olivenbau übernehmen. Je nach Ernte senden wir dir dann deinen Anteil an Olivenöl zu. Falls du interessiert bist, klicke unten und schreib uns eine Nachricht: Wir senden dir so schnell wie möglich weitere Informationen. Dank unserer minimalistischen Pflege wachsen und gedeihen die Oliven frei und ungestört, was sich in der Reinheit und dem charakteristischen Geschmack unseres Öls widerspiegelt. Zusammen mit dem Frantolio aus San Giuseppe Jato haben wir daraus ein wunderbar kräftiges aber ausgewogenes Olivenöl entwickelt.Durch die direkte lokale Verarbeitung und kalte Pressung der Oliven bei 25 °C haben wir ein extra vergines Olivenöl produziert. Mehr zu dem Produktionsprozess könnt ihr hier lesen.
+    <textarea readonly class="text-field">Aus dem Olivenhain von Opa Totó bringen wir euch die Sonne Siziliens auf den Tisch. Opa Totó hat in San Cipirello eine gute Mischung aus Nocelara del Belice (30 %), Cirasola (30 %), Biancolila (30 %) und Calamignana (10 %) Olivenbäumen gepflanzt. Er hat sie erzogen und den Nachkommen überlassen die sich seit dem um den Olivenhain kümmern. Die Bäume sind bis auf die regelmäßigen notwendigen Rückschnitte naturbelassen und werden nicht gedüngt, gespritzt oder in anderer Art und weiße behandelt. Der Olivenbaum ist optimal für den Trockenanbau geeignet und hat biologische Mechanismen entwickelt, um Wassermangel zu tolerieren und auch unter schwierigen klimatischen Bedingungen zu gedeihen. Dennoch benötigt er stets eine minimale Menge an Wasser, die im Olivenhain von Opa Totó ausschließlich vom Himmel kommt. Aus diesem Grund – und besonders bei einem sich verändernden Klima – kann unsere Oliven und somit auch die Ölproduktion variieren. Wenn du ganz oliamo auf deinem Tisch haben möchtest, dann kannst du eine Patenschaft für einen Olivenbau übernehmen. Je nach Ernte senden wir dir dann deinen Anteil an Olivenöl zu. Falls du interessiert bist, klicke unten und schreib uns eine Nachricht: Wir senden dir so schnell wie möglich weitere Informationen. Dank unserer minimalistischen Pflege wachsen und gedeihen die Oliven frei und ungestört, was sich in der Reinheit und dem charakteristischen Geschmack unseres Öls widerspiegelt. Zusammen mit dem Frantolio aus San Giuseppe Jato haben wir daraus ein wunderbar kräftiges aber ausgewogenes Olivenöl entwickelt.Durch die direkte lokale Verarbeitung und kalte Pressung der Oliven bei 25 °C haben wir ein extra vergines Olivenöl produziert. Mehr zu dem Produktionsprozess könnt ihr hier lesen.
     </textarea>
 </div>
 <!-- Galerie mit vier Bildern -->
@@ -324,16 +361,44 @@
 <div id="warumoliamo" class="text-block">
     <h2>Warum oliamo?</h2>
     <textarea readonly class="text-field">
-        Die besondere Mischung der Oliven aus dem Hain von Opa Totó machen unser extra vergines Olivenöl zu einem wahren Genuss. Während dem 
-        Produktionsprozess arbeiten wir mit vielen Menschen zusammen und wollen auch zukünftig mit euch ein ökologisch wertvolles und nachhaltig 
-        produziertes Olivenöl erzeugen. 
+Die besondere Mischung der Oliven aus dem Hain von Opa Totó machen unser extra vergines Olivenöl zu einem wahren Genuss. 
+Während dem Produktionsprozess arbeiten wir mit vielen Menschen zusammen und wollen auch zukünftig mit euch ein ökologisch wertvolles und nachhaltig produziertes Olivenöl erzeugen. 
         Oliamo steht genau dafür. 
-        Der Name unseres Olivenöls setzt sich zusammen aus Teilen des Wortes Oliva (Oli) und der Verbform etwas gemeinsam zu machen (iamo) zusammen. 
-        Zudem beinhaltet es das Wort amo (liebe) das Elena und Justus verbindet. In San Cipirello wo sich der Olivenhain von Opa Totó (Elenas Uropa) 
-        befindet, haben schon seit Jahrhunderten die Menschen unterschiedlicher Kulturen zusammen gelebt und gewirtschaftet. Die ältesten bekannten 
-        Spuren einer menschlichen Siedlung gehen ins 700 Jahrhundert zurück. Seitdem haben verschiedene Kulturen Sizilien bevölkert und kulturell bereichert.
-        Ein Produkt dieses kulturellen Austauschs ist der Anbau von Oliven und so auch unser Olivenöl. Wir freuen uns, euch durch oliamo in den Austausch 
-        einzubeziehen.
+Der Name unseres Olivenöls setzt sich zusammen aus Teilen des Wortes Oliva (Oli) und der Verbform etwas gemeinsam zu machen (iamo) zusammen. Zudem beinhaltet es das Wort amo (liebe) das Elena und Justus verbindet. 
+In San Cipirello wo sich der Olivenhain von Opa Totó (Elenas Uropa) befindet, haben schon seit Jahrhunderten die Menschen unterschiedlicher Kulturen zusammen gelebt und gewirtschaftet. Die ältesten bekannten Spuren einer menschlichen Siedlung gehen ins 700 Jahrhundert zurück. Seitdem haben verschiedene Kulturen Sizilien bevölkert und kulturell bereichert. Ein Produkt dieses kulturellen Austauschs ist der Anbau von Oliven und so auch unser Olivenöl. Wir freuen uns, euch durch oliamo in den Austausch einzubeziehen.
+    </textarea>
+</div>
+<body>
+
+    <h2>Kontaktformular</h2>
+
+    <!-- Kontaktformular -->
+    <form action="send_email.php" method="POST">
+        <label for="firstname">Vorname:</label>
+        <input type="text" id="firstname" name="firstname" required>
+
+        <label for="lastname">Nachname:</label>
+        <input type="text" id="lastname" name="lastname" required>
+
+        <label for="email">E-Mail-Adresse:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="address">Adresse:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="message">Nachricht:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Absenden</button>
+    </form>
+
+</body>
+
+<div id="derprozess" class="text-block">
+    <h2>Der Produktionsprozess</h2>
+    <textarea readonly class="text-field">
+Der wichtigste Schritt auf dem Weg zum Olivenöl ist die Ernte der Oliven, ein anstrengender, schweißtreibender und mühseliger Schritt. Zuerst schütteln wir die Äste dafür um die schon etwas lockeren Oliven auf die unter den Bäumen liegenden Netze fallen zu lassen. Dann kämmen wir die Bäume mit einem elektrischen Rechen und streifen die noch etwas fest sitzenden Oliven ab. 
+Die Oliven von den Netzen werden auf einem Anhänger gesammelt und innerhalb der nächsten drei Tage zum Pressen gebracht. Nach dem Wiegen werden die Blätter entfernt und die Oliven gewaschen und gemahlen. Der erzeugte Olivenbrei wird für circa 30 Minuten bei 25 °C gemischt und gerührt. Dabei trennt sich schon das Öl von dem Brei wird aber anschließend in einer Presse extrahiert. Das Öl wird dann in einer Zentrifuge mit und vom Wasser gereinigt. Heraus kommt das wunderbar köstliche oliamo Öl von Opa Totó.        
     </textarea>
 </div>
 
@@ -385,5 +450,45 @@ window.onclick = function(event) {
 }
 
 </script>
+<!--
+    <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Empfänger-E-Mail-Adresse
+    $to = "oliamototo@dd.org";
+    
+    // Formulardaten sammeln
+    $firstname = htmlspecialchars($_POST['firstname']);
+    $lastname = htmlspecialchars($_POST['lastname']);
+    $email = htmlspecialchars($_POST['email']);
+    $address = htmlspecialchars($_POST['address']);
+    $message = htmlspecialchars($_POST['message']);
+    
+    // E-Mail-Betreff
+    $subject = "Neue Nachricht vom Kontaktformular";
+    
+    // E-Mail-Inhalt
+    $email_content = "Sie haben eine neue Nachricht von Ihrer Website.\n\n";
+    $email_content .= "Vorname: $firstname\n";
+    $email_content .= "Nachname: $lastname\n";
+    $email_content .= "E-Mail-Adresse: $email\n";
+    $email_content .= "Adresse: $address\n\n";
+    $email_content .= "Nachricht:\n$message\n";
+    
+    // E-Mail-Header
+    $headers = "From: $email" . "\r\n" .
+               "Reply-To: $email" . "\r\n" .
+               "Content-Type: text/plain; charset=UTF-8";
+    
+    // E-Mail senden
+    if (mail($to, $subject, $email_content, $headers)) {
+        echo "Die Nachricht wurde erfolgreich gesendet!";
+    } else {
+        echo "Es gab ein Problem beim Senden der Nachricht.";
+    }
+} else {
+    echo "Bitte füllen Sie das Formular aus.";
+}
+?> -->
+
 </body>
 </html>
