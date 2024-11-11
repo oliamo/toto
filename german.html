@@ -108,6 +108,25 @@
         .flag.de {
             background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg');
         }
+
+        /* Stil für den neuen Bereich */
+        #about {
+            background-color: #f9f9f9;
+            padding: 50px;
+            margin-top: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #about h2 {
+            font-size: 36px;
+            color: green;
+        }
+
+        #about p {
+            font-size: 18px;
+            color: #333;
+        }
     </style>
 </head>
 <body>
@@ -119,12 +138,9 @@
     </div>
 
     <!-- Menü-Overlay -->
-    <!-- Menü-Overlay -->
 <div id="menu" class="menu">
     <a href="index.html">Home</a>
-    <a href="english.html">English</a>
-    <a href="german.html">Deutsch</a>
-    <a href="italian.html">Italiano</a>
+    <a href="index.html">Sprache</a>
 </div>
 
 
@@ -132,24 +148,10 @@
     <div class="content">
         <h1>Oliamo</h1>
         <img class="circular--square" src="tree.png" alt="Oliamo Logo"/>
-        <h1>Benvenuti da oliamo!</h1>
+        <h1>Herzlich wilkommen bei oliamo!</h1>
     </div>
 
-    <!-- Section für Sprachwahl -->
-    <div id="language" class="content">
-        <h2>Select your language:</h2>
-        <div class="flags">
-            <a href="english.html" class="flag gb"></a>
-            <a href="german.html" class="flag de"></a>
-            <a href="italian.html" class="flag it"></a>
-            <!---- 
-            <div class="flag gb" onclick="alert('English selected!')"></div>
-            <div class="flag it" onclick="alert('Italian selected!')"></div>
-            <div class="flag de" onclick="alert('German selected!')"></div> 
-            -->
-        </div>
-    </div>
-
+    
     <!-- JavaScript für das Menü -->
     <script>
         function toggleMenu() {
@@ -161,12 +163,10 @@
             document.getElementById('language').scrollIntoView({ behavior: 'smooth' });
         }
     </script>
-
-</body>
-</html>
-<!--
-    <article>
-        Aus dem Olivenhain von Opa Totó bringen wir euch die Sonne Siziliens auf den Tisch. Opa Totó hat in San Cipirello eine gute Mischung aus 
+<!-- Hier kommt der Bereich, auf den du im Menü verlinken möchtest -->
+<div id="oel" class="section">
+    <h2>Das Öl</h2>
+    <p>Aus dem Olivenhain von Opa Totó bringen wir euch die Sonne Siziliens auf den Tisch. Opa Totó hat in San Cipirello eine gute Mischung aus 
         Nocelara del Belice (30 %), Cirasola (30 %), Biancolila (30 %) und Calamignana (10 %) Olivenbäumen gepflanzt. Er hat sie erzogen und den 
         Nachkommen überlassen die sich seit dem um den Olivenhain kümmern. Die Bäume sind bis auf die regelmäßigen notwendigen Rückschnitte naturbelassen 
         und werden nicht gedüngt, gespritzt oder in anderer Art und weiße behandelt. 
@@ -179,6 +179,7 @@
         Dank unserer minimalistischen Pflege wachsen und gedeihen die Oliven frei und ungestört, was sich in der Reinheit und dem charakteristischen 
         Geschmack unseres Öls widerspiegelt. Zusammen mit dem Frantolio aus San Giuseppe Jato haben wir daraus ein wunderbar kräftiges aber ausgewogenes 
         Olivenöl entwickelt.Durch die direkte lokale Verarbeitung und kalte Pressung der Oliven bei 25 °C haben wir ein extra vergines Olivenöl produziert. 
-        Mehr zu dem Produktionsprozess könnt ihr hier lesen.  
-    </article>
--->
+        Mehr zu dem Produktionsprozess könnt ihr hier lesen.</p>
+</div>
+</body>
+</html>
