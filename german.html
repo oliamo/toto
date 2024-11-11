@@ -298,6 +298,38 @@
         button:hover {
             background-color: #45a049;
         }
+/* Stil für den Pfeil-Button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;  /* Abstand vom unteren Rand der Seite */
+            right: 30px;   /* Abstand vom rechten Rand der Seite */
+            background-color: #4CAF50;  /* Hintergrundfarbe */
+            color: white;  /* Schriftfarbe */
+            border: none;
+            border-radius: 50%;
+            font-size: 24px;  /* Schriftgröße des Pfeils */
+            width: 50px;  /* Breite des Buttons */
+            height: 50px;  /* Höhe des Buttons */
+            text-align: center;
+            line-height: 50px;  /* Vertikale Zentrierung des Pfeils */
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .scroll-to-top:hover {
+            background-color: #45a049;  /* Farbe bei Hover */
+        }
+
+        /* Optional: Stellen Sie sicher, dass der Pfeil nicht angezeigt wird, wenn der Benutzer bereits oben ist */
+        #scrollToTopBtn {
+            display: none; /* Verstecken, wenn nicht gescrollt */
+        }
+
+        /* Button sichtbar machen, wenn der Benutzer scrollt */
+        .show {
+            display: block;
+        }
 
     </style>
 </head>
@@ -317,15 +349,14 @@
     <a href="#derprozess">Der Produktionsprozess</a>
     <a href="index.html">Sprache</a>
 </div>
-
+<a href="#top" class="scroll-to-top" id="scrollToTopBtn">&#8593;</a>
 
     <!-- Hauptinhalt -->
-    <div class="content">
+    <div id = "top" class="content">
         <h1>oliamo</h1>
         <img class="circular--square" src="tree.png" alt="Oliamo Logo"/>
         <h1>Herzlich wilkommen bei oliamo!</h1>
     </div>
-
     
  
 <!-- Hier kommt der Bereich, auf den du im Menü verlinken möchtest -->
@@ -448,6 +479,20 @@ window.onclick = function(event) {
         closeGallery();
     }
 }
+
+</script>
+<script>
+    // Holen Sie sich den Button
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// Wenn der Benutzer nach unten scrollt, zeigen Sie den Button an
+window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollToTopBtn.classList.add("show");
+    } else {
+        scrollToTopBtn.classList.remove("show");
+    }
+};
 
 </script>
 <!--
