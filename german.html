@@ -20,7 +20,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            position: fixed; /* Fixiert den Header am oberen Rand */
         }
 
         .menu-button {
@@ -29,12 +28,10 @@
             border: none;
             padding: 10px;
             cursor: pointer;
-            position: fixed; /* Fixiert den Header am oberen Rand */
         }
 
         .menu-button:hover {
             background-color: #f0f0f0;
-            position: fixed; /* Fixiert den Header am oberen Rand */
         }
 
         /* Menü-Overlay */
@@ -141,6 +138,7 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: justify;  /* Zentriert den Inhalt */
+            font: 'Lexend Deca';
         }
 
         /* Stil für die Überschrift */
@@ -164,7 +162,7 @@
             resize: none;  /* Verhindert, dass das Textfeld manuell vergrößert wird */
             box-sizing: border-box;  /* Stellt sicher, dass Padding und Border in die Gesamtgröße einbezogen werden */
             text-align: justify;
-            font: Lexend Deca;
+            font: 'Lexend Deca';
         }
 
         /* Media Query für kleine Bildschirme (z.B. Smartphones) */
@@ -340,16 +338,16 @@
 <!-- Galerie mit vier Bildern -->
 <div class="image-gallery">
     <div class="gallery-item">
-        <img src="tree.png" alt="Bild 1" class="gallery-thumbnail" onclick="openGallery(0)">
+        <img src="tree_olive.png" alt="Bild 1" class="gallery-thumbnail" onclick="openGallery(0)">
     </div>
     <div class="gallery-item">
-        <img src="https://via.placeholder.com/150" alt="Bild 2" class="gallery-thumbnail" onclick="openGallery(1)">
+        <img src="sky.png" alt="Bild 2" class="gallery-thumbnail" onclick="openGallery(1)">
     </div>
     <div class="gallery-item">
-        <img src="https://via.placeholder.com/150" alt="Bild 3" class="gallery-thumbnail" onclick="openGallery(2)">
+        <img src="leaves.png" alt="Bild 3" class="gallery-thumbnail" onclick="openGallery(2)">
     </div>
     <div class="gallery-item">
-        <img src="https://via.placeholder.com/150" alt="Bild 4" class="gallery-thumbnail" onclick="openGallery(3)">
+        <img src="full.png" alt="Bild 4" class="gallery-thumbnail" onclick="openGallery(3)">
     </div>
 </div>
 
@@ -421,10 +419,10 @@ Die Oliven von den Netzen werden auf einem Anhänger gesammelt und innerhalb der
 <script>
     // Bilder für die Galerie (kannst du durch echte URLs ersetzen)
 const images = [
-    "tree.png",
-    "https://via.placeholder.com/600x400?text=Bild+2",
-    "https://via.placeholder.com/600x400?text=Bild+3",
-    "https://via.placeholder.com/600x400?text=Bild+4"
+    "tree_olive.png",
+    "sky.png",
+    "leaves.png",
+    "full.png"
 ];
 
 // Funktion, um das Modal zu öffnen
