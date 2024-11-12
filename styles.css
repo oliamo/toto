@@ -329,3 +329,64 @@ body {
     button:hover {
     background-color: #45a049;
     }
+
+    /* Fußzeile */
+.footer {
+    background-color: #e6e490;  /* Gleiche Farbe wie die Header-Leiste */
+    color: white;
+    padding: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1 1 30%; /* Jede Sektion nimmt 30% der Breite ein */
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Optionale Trennlinie im Footer */
+.footer::before {
+    content: "";
+    display: block;
+    border-top: 1px solid #ccc;
+    margin-bottom: 10px;
+}
