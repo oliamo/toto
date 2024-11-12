@@ -198,7 +198,7 @@ body {
     @media (max-width: 768px) {
     /* Reduziert die Höhe des Textfeldes auf kleineren Geräten */
     .text-field {
-    height: 300px; /* Kleinere Höhe auf Smartphones */
+    height: auto; /* Kleinere Höhe auf Smartphones */
     }
     
     /* Verkleinert die Schriftgröße der Überschrift */
@@ -219,7 +219,7 @@ body {
     }
     
     .text-field {
-    height: 200px; /* Noch kleinere Höhe für sehr kleine Bildschirme */
+    height: auto; /* Noch kleinere Höhe für sehr kleine Bildschirme */
     }
     }
     
