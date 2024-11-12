@@ -249,6 +249,10 @@ body {
     width: 23%; /* Damit 4 Bilder nebeneinander passen */
     text-align: center;
     }
+    /* Einzelnes Bild (Thumbnail) */
+    .gallery-item-single {
+    text-align: center;               /* Zentriert das Bild innerhalb des Elements */
+    }
     
     /* Stil für die kleinen Thumbnails (Bilder in der Galerie) */
     .gallery-thumbnail {
