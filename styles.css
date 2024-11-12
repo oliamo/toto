@@ -137,7 +137,7 @@ body {
     
     /* Stil für den Textblock */
     .text-block {
-    background-color: #e6e490;
+    background-color:  rgb(194, 205, 142);
     padding: 20px;
     margin: 10px auto;
     width: 100%; /* Volle Breite auf mobilen Geräten */
@@ -165,7 +165,7 @@ body {
     padding: 20px;
     font-size: 16px;
     color: rgb(105, 122, 0);
-    background-color: #e6e490;
+    background-color: rgb(194, 205, 142);
     border: 1px solid rgb(255, 252, 239);
     border-radius: 8px;
     resize: none;                        /* Verhindert das manuelle Vergrößern */
@@ -237,6 +237,12 @@ body {
     .gallery-item-single {
     text-align: center;               /* Zentriert das Bild innerhalb des Elements */
     }
+
+.gallery-thumbnail-single {
+    max-width: 100%;                  /* Bild wird auf die maximale Breite des Containers skaliert */
+    height: auto;                     /* Stellt sicher, dass das Bild im Verhältnis bleibt */
+    cursor: pointer;                 /* Zeigt an, dass das Bild anklickbar ist */
+}
     
     /* Stil für die kleinen Thumbnails (Bilder in der Galerie) */
     .gallery-thumbnail {
