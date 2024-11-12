@@ -3,7 +3,7 @@
     src: url('FrutigerLTStd-Cn.woff2') format('woff2'),
     font-weight: normal;
     font-style: normal;
-}
+    }
 
 
 body {
@@ -15,7 +15,7 @@ body {
     
     /* Grüner Balken oben mit Menü-Button */
     .top-bar {
-    background-color: rgb(158, 178, 84);
+    background-color: rgb(194, 205, 142);
     color: white;
     padding: 10px;
     display: flex;
@@ -53,10 +53,10 @@ body {
     position: fixed;
     top: 50px;  /* Der Abstand des Menüs zum oberen Rand */
     right: 0;
-    background-color: white;
-    color: rgb(158, 178, 84);
+    background-color: rgb(255, 252, 239);;
+    color: rgb(105, 122, 0);
     width: 200px;
-    border: 1px solid rgb(158, 178, 84);
+    border: 1px solidrgb(255, 252, 239);
     padding: 10px;
     z-index: 999;  /* Stellt sicher, dass das Menü über dem anderen Inhalt erscheint */
     }
@@ -65,7 +65,7 @@ body {
     .menu a {
     display: block;
     text-decoration: none;
-    color: rgb(158, 178, 84);
+    color: rgb(255, 252, 239);
     padding: 10px 0;
     }
     
@@ -129,25 +129,6 @@ body {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg');
     }
     
-    /* Stil für den neuen Bereich */
-    .about {
-    background-color: #f9f9f9;
-    padding: 50px;
-    margin-top: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    
-    .about h2 {
-    font-size: 36px;
-    color: rgb(55, 104, 55);
-    }
-    
-    .about p {
-    font-size: 18px;
-    color: #333;
-    }
-    
     /* Stil für den Textblock */
     .text-block {
     background-color: #e6e490;
@@ -165,13 +146,12 @@ body {
     /* Stil für die Überschrift */
     .text-block h2 {
     font-size: 36px;
-    color: rgb(158, 178, 84);
+    color:rgb(105, 122, 0);
     margin-bottom: 10px;
     text-align: center;
     font-family: 'frutiger', sans-serif;
     }
     
-    /* Stil für das Textfeld */
     /* Stil für das Textfeld */
 .text-field {
     width: 100%;                         /* Textfeld auf volle Breite setzen */
@@ -180,7 +160,7 @@ body {
     font-size: 16px;
     color: rgb(105, 122, 0);
     background-color: #e6e490;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(255, 252, 239);
     border-radius: 8px;
     resize: none;                        /* Verhindert das manuelle Vergrößern */
     box-sizing: border-box;              /* Berücksichtigt Padding und Border in der Größe */
@@ -191,13 +171,12 @@ body {
     white-space: pre-wrap;               /* Umbrüche korrekt anzeigen */
     height: auto;                        /* Textfeld wächst mit dem Text */
 }
-    
-    /* Optional: Eine Regel, um Text im Textfeld gut sichtbar zu halten */
-    .text-field:focus {
-    outline: none;                       /* Verhindert die Standard-Fokus-Grenze */
-    border-color: #6cbf6b;               /* Neue Farbe, wenn das Textfeld aktiv ist */
-    }
-    
+
+     /* Optional: Stil für den Fokus des Textfeldes */
+     .text-field:focus {
+        border-color: rgb(105, 122, 0);
+        outline: none;
+        } 
     
 
 /* Media Query für kleine Bildschirme (z.B. Smartphones) */
@@ -224,16 +203,9 @@ body {
         font-size: 14px; /* Weiter reduzierte Schriftgröße auf sehr kleinen Geräten */
         height: auto;    /* Höhe weiterhin auf auto setzen */
     }
-}
-
-
+} 
     
-    
-    /* Optional: Stil für den Fokus des Textfeldes */
-    .text-field:focus {
-    border-color: rgb(105, 122, 0);
-    outline: none;
-    }
+  
     
     /* Stil für die Galerie mit Bildern nebeneinander */
     .image-gallery {
@@ -341,8 +313,8 @@ body {
 
 /* Fußzeile im grünen Band */
 .footer {
-    background-color: #e6e490;  /* Gleiche grüne Farbe wie der Header */
-    color: white;
+    background-color: rgb(194, 205, 142);  /* Gleiche grüne Farbe wie der Header */
+    color: rgb(105, 122, 0);
     font-family: 'frutiger', sans-serif;
     padding: 10px 0;  /* Weniger Padding für eine schmalere Fußzeile */
     position: relative;
