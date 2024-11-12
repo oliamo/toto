@@ -3,6 +3,7 @@
     src: url('FrutigerLTStd-Cn.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
+    color: rgb(105, 122, 0)
     }
 
 
@@ -11,12 +12,13 @@ body {
     margin: 0;
     padding: 0;
     background-color:  rgb(255, 252, 239);
+    color: rgb(105, 122, 0);
     }
     
     /* Grüner Balken oben mit Menü-Button */
     .top-bar {
     background-color: rgb(194, 205, 142);
-    color: white;
+    color: rgb(255, 252, 239);
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -28,15 +30,17 @@ body {
     width: 100%;  /* Stellt sicher, dass die Top-Bar die gesamte Breite des Bildschirms einnimmt */
     z-index: 1000;  /* Stellt sicher, dass sie immer über dem anderen Inhalt bleibt */
     }
+    
     /* Logo (Bild) */
     .top-bar .logo {
         height: 4%;  /* Bildhöhe an die Höhe des Balkens anpassen */
         width: auto;   /* Breite wird automatisch angepasst, um das Seitenverhältnis zu wahren */
         margin-left: 10px;  /* Optionaler Abstand nach links */
     }
+
     .menu-button {
-    background-color: white;
-    color: rgb(110, 156, 110);
+    background-color: rgb(255, 252, 239);
+    color:  rgb(105, 122, 0);;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -53,7 +57,7 @@ body {
     position: fixed;
     top: 50px;  /* Der Abstand des Menüs zum oberen Rand */
     right: 0;
-    background-color: rgb(255, 252, 239);;
+    background-color: rgb(194, 205, 142);
     color: rgb(105, 122, 0);
     width: 200px;
     border: 1px solidrgb(255, 252, 239);
@@ -83,12 +87,14 @@ body {
     .content {
     text-align: center;
     padding: 50px;
+    color: rgb(105, 122, 0);
     }
     
     .content h1 {
     font-family: 'frutiger', sans-serif;
     font-size: 48px;
     margin-bottom: 20px;
+    color: rgb(105, 122, 0);
     }
     
     .content img {
@@ -226,7 +232,7 @@ body {
         display: flex;                    /* Flexbox für die Ausrichtung */
         justify-content: center;          /* Zentriert das Bild horizontal */
         align-items: center;              /* Zentriert das Bild vertikal */
-        height: 100vh;                    /* Stellt sicher, dass der Container die volle Bildschirmhöhe einnimmt */
+        height: 60vh;                    /* Stellt sicher, dass der Container die volle Bildschirmhöhe einnimmt */
     }
     .gallery-item-single {
     text-align: center;               /* Zentriert das Bild innerhalb des Elements */
@@ -275,7 +281,7 @@ body {
     top: 20px;
     right: 20px;
     font-size: 30px;
-    color: white;
+    color: rgb(255, 252, 239);
     cursor: pointer;
     z-index: 1100;
     }
@@ -306,7 +312,7 @@ body {
     
     button {
     background-color: #4CAF50;
-    color: white;
+    color: rgb(255, 252, 239);
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
@@ -351,7 +357,7 @@ body {
 }
 
 .footer-section ul li a {
-    color: white;
+    color: rgb(255, 252, 239);
     text-decoration: none;
 }
 
@@ -367,11 +373,11 @@ body {
 
 .footer-bottom p {
     margin: 0;
-    color: white;
+    color: rgb(255, 252, 239);
 }
 
 .footer-bottom p a {
-    color: white;
+    color: rgb(255, 252, 239);
     text-decoration: none;
 }
 
@@ -389,7 +395,7 @@ body {
 
 /* Link-Stile im Footer */
 .footer a {
-    color: white;
+    color: rgb(255, 252, 239);
     text-decoration: none;
 }
 
