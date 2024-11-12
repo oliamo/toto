@@ -164,38 +164,7 @@ body {
     }
     
     /* Stil für das Textfeld */
-    .text-field {
-    width: 100%;                         /* Textfeld breiter machen */
-        min-height: 50px;                    /* Minimale Höhe, damit es nicht zu klein ist */
-        min-height: 50px;                    /* Minimale Höhe des Textfeldes */
-    padding: 20px;
-    font-size: 16px;
-    color: #333;
-    background-color: #e6e490;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    resize: none;                        /* Verhindert das manuelle Vergrößern */
-    box-sizing: border-box;              /* Berücksichtigt Padding und Border in der Größe */
-    text-align: justify;                 /* Text wird im Blocksatz dargestellt */
-    font-family: 'Lexend Deca', sans-serif;
-    overflow: hidden;                    /* Verhindert Scrollbalken */
-        word-wrap: break-word;               /* Bricht lange Wörter am Rand */
-        height: auto;                        /* Textfeld wächst mit dem Inhalt */
-        white-space: pre-wrap;               /* Zeilenumbrüche werden im Textfeld unterstützt */
-        word-wrap: break-word;               /* Bricht lange Wörter um */
-        white-space: pre-wrap;               /* Umbrüche korrekt anzeigen */
-        height: auto;                        /* Textfeld wächst mit dem Text */
-    }
-    
-    /* Optional: Eine Regel, um Text im Textfeld gut sichtbar zu halten */
-    .text-field:focus {
-    outline: none;                       /* Verhindert die Standard-Fokus-Grenze */
-    border-color: #6cbf6b;               /* Neue Farbe, wenn das Textfeld aktiv ist */
-    }
-    
-    
-    /* Media Query für kleine Bildschirme (z.B. Smartphones) */
-   /* Stil für das Textfeld */
+    /* Stil für das Textfeld */
 .text-field {
     width: 100%;                         /* Textfeld auf volle Breite setzen */
     min-height: 50px;                    /* Minimale Höhe des Textfeldes */
@@ -212,14 +181,23 @@ body {
     overflow: hidden;                    /* Verhindert Scrollbalken */
     word-wrap: break-word;               /* Bricht lange Wörter um */
     white-space: pre-wrap;               /* Umbrüche korrekt anzeigen */
-    height: auto;                        /* Verhindert eine feste Höhe und lässt das Textfeld mit dem Inhalt wachsen */
+    height: auto;                        /* Textfeld wächst mit dem Text */
 }
+    
+    /* Optional: Eine Regel, um Text im Textfeld gut sichtbar zu halten */
+    .text-field:focus {
+    outline: none;                       /* Verhindert die Standard-Fokus-Grenze */
+    border-color: #6cbf6b;               /* Neue Farbe, wenn das Textfeld aktiv ist */
+    }
+    
+    
 
-/* Reduziert die Höhe auf kleineren Geräten */
+/* Media Query für kleine Bildschirme (z.B. Smartphones) */
 @media (max-width: 768px) {
     .text-field {
         padding: 15px;  /* Weniger Padding auf kleinen Geräten */
         font-size: 14px; /* Etwas kleinere Schriftgröße auf kleinen Geräten */
+        height: auto;    /* Höhe auf auto setzen, damit es sich an den Text anpasst */
     }
     
     .text-block h2 {
@@ -236,8 +214,10 @@ body {
     .text-field {
         padding: 10px;  /* Noch weniger Padding auf sehr kleinen Geräten */
         font-size: 14px; /* Weiter reduzierte Schriftgröße auf sehr kleinen Geräten */
+        height: auto;    /* Höhe weiterhin auf auto setzen */
     }
 }
+
 
     
     
