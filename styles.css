@@ -10,12 +10,12 @@ body {
     font-family: 'frutiger', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(178, 194, 110);
+    background-color:  rgb(255, 252, 239);
     }
     
     /* Grüner Balken oben mit Menü-Button */
     .top-bar {
-    background-color: #e6e490;
+    background-color: rgb(158, 178, 84);
     color: white;
     padding: 10px;
     display: flex;
@@ -54,9 +54,9 @@ body {
     top: 50px;  /* Der Abstand des Menüs zum oberen Rand */
     right: 0;
     background-color: white;
-    color: rgb(110, 156, 110);
+    color: rgb(158, 178, 84);
     width: 200px;
-    border: 1px solid rgb(110, 156, 110);
+    border: 1px solid rgb(158, 178, 84);
     padding: 10px;
     z-index: 999;  /* Stellt sicher, dass das Menü über dem anderen Inhalt erscheint */
     }
@@ -65,7 +65,7 @@ body {
     .menu a {
     display: block;
     text-decoration: none;
-    color: rgb(110, 156, 110);
+    color: rgb(158, 178, 84);
     padding: 10px 0;
     }
     
@@ -165,7 +165,7 @@ body {
     /* Stil für die Überschrift */
     .text-block h2 {
     font-size: 36px;
-    color: green;
+    color: rgb(158, 178, 84);
     margin-bottom: 10px;
     text-align: center;
     font-family: 'frutiger', sans-serif;
@@ -178,7 +178,7 @@ body {
     min-height: 50px;                    /* Minimale Höhe des Textfeldes */
     padding: 20px;
     font-size: 16px;
-    color: #333;
+    color: rgb(105, 122, 0);
     background-color: #e6e490;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -231,7 +231,7 @@ body {
     
     /* Optional: Stil für den Fokus des Textfeldes */
     .text-field:focus {
-    border-color: green;
+    border-color: rgb(105, 122, 0);
     outline: none;
     }
     
