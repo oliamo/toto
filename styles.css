@@ -145,6 +145,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: justify;  /* Text im Blocksatz */
     font-family: 'Lexend Deca', sans-serif;
+    height: auto;                        /* Textfeld wächst mit dem Text */
 }
 
 /* Stil für die Überschrift */
@@ -159,7 +160,7 @@ body {
 /* Stil für das Textfeld */
 .text-field {
     width: 100%;                         /* Textfeld breiter machen */
-    min-height: 50px;                    /* Minimale Höhe, damit es nicht zu klein ist */
+    min-height: 50px;                    /* Minimale Höhe des Textfeldes */
     padding: 20px;
     font-size: 16px;
     color: #333;
@@ -171,9 +172,9 @@ body {
     text-align: justify;                 /* Text wird im Blocksatz dargestellt */
     font-family: 'Lexend Deca', sans-serif;
     overflow: hidden;                    /* Verhindert Scrollbalken */
-    word-wrap: break-word;               /* Bricht lange Wörter am Rand */
-    height: auto;                        /* Textfeld wächst mit dem Inhalt */
-    white-space: pre-wrap;               /* Zeilenumbrüche werden im Textfeld unterstützt */
+    word-wrap: break-word;               /* Bricht lange Wörter um */
+    white-space: pre-wrap;               /* Umbrüche korrekt anzeigen */
+    height: auto;                        /* Textfeld wächst mit dem Text */
 }
 
 /* Optional: Eine Regel, um Text im Textfeld gut sichtbar zu halten */
