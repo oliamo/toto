@@ -39,7 +39,7 @@ body {
     }
 
     .menu-button {
-    background-color: rgb(255, 252, 239);
+    background-color: rgb(194, 205, 142);
     color:  rgb(105, 122, 0);;
     border: none;
     padding: 10px;
@@ -49,6 +49,7 @@ body {
     
     .menu-button:hover {
     background-color: #f0f0f0;
+    color: rgb(105, 122, 0);
     }
     
     /* Menü-Overlay */
@@ -60,7 +61,7 @@ body {
     background-color: rgb(194, 205, 142);
     color: rgb(105, 122, 0);
     width: 200px;
-    border: 1px solidrgb(255, 252, 239);
+    border: 1px solid rgb(105, 122, 0);
     padding: 10px;
     z-index: 999;  /* Stellt sicher, dass das Menü über dem anderen Inhalt erscheint */
     }
@@ -69,12 +70,13 @@ body {
     .menu a {
     display: block;
     text-decoration: none;
-    color: rgb(255, 252, 239);
+    color: rgb(194, 205, 142);
     padding: 10px 0;
     }
     
     .menu a:hover {
     background-color: #f0f0f0;
+    color: rgb(105, 122, 0);
     }
     
     /* Damit der Inhalt nicht hinter dem fixierten Menü verborgen wird */
