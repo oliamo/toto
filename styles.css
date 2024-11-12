@@ -1,5 +1,5 @@
 body {
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'frutiger', sans-serif;
     margin: 0;
     padding: 0;
     background-color: rgb(178, 194, 110);
@@ -78,7 +78,7 @@ body {
     }
     
     .content h1 {
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'frutiger', sans-serif;
     font-size: 48px;
     margin-bottom: 20px;
     }
@@ -150,7 +150,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: justify;  /* Text im Blocksatz */
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'frutiger', sans-serif;
         height: auto;                        /* Textfeld wächst mit dem Text */
     }
     
@@ -160,7 +160,7 @@ body {
     color: green;
     margin-bottom: 10px;
     text-align: center;
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'frutiger', sans-serif;
     }
     
     /* Stil für das Textfeld */
@@ -177,7 +177,7 @@ body {
     resize: none;                        /* Verhindert das manuelle Vergrößern */
     box-sizing: border-box;              /* Berücksichtigt Padding und Border in der Größe */
     text-align: justify;                 /* Text im Blocksatz */
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'frutiger', sans-serif;
     overflow: hidden;                    /* Verhindert Scrollbalken */
     word-wrap: break-word;               /* Bricht lange Wörter um */
     white-space: pre-wrap;               /* Umbrüche korrekt anzeigen */
@@ -331,7 +331,7 @@ body {
 .footer {
     background-color: #e6e490;  /* Gleiche grüne Farbe wie der Header */
     color: white;
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'frutiger', sans-serif;
     padding: 10px 0;  /* Weniger Padding für eine schmalere Fußzeile */
     position: relative;
     bottom: 0;
