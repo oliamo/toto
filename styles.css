@@ -330,34 +330,33 @@ body {
     background-color: #45a049;
     }
 
-    /* Fußzeile */
+/* Fußzeile im grünen Band */
 .footer {
-    background-color: #e6e490;  /* Gleiche Farbe wie die Header-Leiste */
+    background-color: #e6e490;  /* Gleiche grüne Farbe wie der Header */
     color: white;
-    padding: 20px;
     font-family: 'Lexend Deca', sans-serif;
+    padding: 10px 0;  /* Weniger Padding für eine schmalere Fußzeile */
     position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: space-evenly;  /* Verteilung der Sektionen im Footer */
+    flex-wrap: wrap;  /* Auf kleineren Bildschirmen sollen die Sektionen untereinander angezeigt werden */
 }
 
 .footer-section {
-    flex: 1 1 30%; /* Jede Sektion nimmt 30% der Breite ein */
-    margin: 10px;
-}
-
-.footer-section h3 {
-    font-size: 18px;
+    flex: 1 1 30%;  /* Jede Sektion nimmt 30% der Breite ein */
+    padding: 5px 10px;
     margin-bottom: 10px;
 }
 
 .footer-section ul {
     list-style-type: none;
     padding: 0;
+    font-size: 14px;  /* Kleinere Schriftgröße für den Footer */
 }
 
 .footer-section ul li {
@@ -375,18 +374,38 @@ body {
 
 .footer-bottom {
     text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
+    margin-top: 10px;
+    font-size: 12px;  /* Sehr kleine Schriftgröße für den Copyright-Hinweis */
 }
 
 .footer-bottom p {
     margin: 0;
+    color: white;
 }
 
-/* Optionale Trennlinie im Footer */
+.footer-bottom p a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom p a:hover {
+    text-decoration: underline;
+}
+
+/* Optional: Trennlinie im Footer */
 .footer::before {
     content: "";
     display: block;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #fff;  /* Weiße Linie, die den Footer vom Hauptinhalt trennt */
     margin-bottom: 10px;
+}
+
+/* Link-Stile im Footer */
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
