@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'frutiger';
+    src: url('FrutigerLTStd-Cn.woff2') format('woff2'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
     font-family: 'frutiger', sans-serif;
     margin: 0;
