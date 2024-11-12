@@ -40,7 +40,8 @@
 <div id="oel" class="text-block">
     <h2>Das Öl</h2>
     <div readonly class="text-field">
-Aus dem Olivenhain von Opa Totó bringen wir die Sonne Siziliens direkt auf deinen Tisch. In San Cipirello hat Opa Totó eine sorgfältige Mischung aus Nocellara del Belice (30 %), Cerasuola (30 %), Biancolilla (30 %) und Calamignana (10 %) Olivenbäumen gepflanzt. Er hat sie liebevoll gepflegt und an die nächsten Generationen weitergegeben, die sich seitdem um den Olivenhain kümmern.
+Aus dem Olivenhain von Opa Totó bringen wir die Sonne Siziliens direkt auf deinen Tisch. Des beste extra vergine Olivenöl aus der Ernte 2024.
+In San Cipirello hat Opa Totó eine sorgfältige Mischung aus Nocellara del Belice (30 %), Cerasuola (30 %), Biancolilla (30 %) und Calamignana (10 %) Olivenbäumen gepflanzt. Er hat sie liebevoll gepflegt und an die nächsten Generationen weitergegeben, die sich seitdem um den Olivenhain kümmern.
 
 Die Bäume sind bis auf die notwendigen Rückschnitte naturbelassen und werden weder gedüngt noch gespritzt oder auf andere Weise behandelt. Der Olivenbaum ist perfekt für den Trockenanbau geeignet und hat biologische Mechanismen entwickelt, um mit Wassermangel zurechtzukommen und auch unter schwierigen klimatischen Bedingungen zu gedeihen. Dennoch benötigt er eine minimale Menge Wasser, die im Olivenhain von Opa Totó ausschließlich vom Himmel kommt. Aus diesem Grund – und besonders angesichts des sich verändernden Klimas – kann die Menge an Oliven und somit auch die Ölproduktion von Jahr zu Jahr variieren.
         
@@ -113,17 +114,8 @@ Wir freuen uns, euch durch Oliamo in diesen Austausch einzubeziehen. </div>
 -->
 <!-- Galerie mit vier Bildern -->
 <div class="image-gallery">
-    <div class="gallery-item">
-        <img src="leaveolive.png" alt="Bild 1" class="gallery-thumbnail" onclick="openGallery(0)">
-    </div>
-    <div class="gallery-item">
+        <div class="gallery-item">
         <img src="oliveto.jpg" alt="Bild 2" class="gallery-thumbnail" onclick="openGallery(1)">
-    </div>
-    <div class="gallery-item">
-        <img src="rows.png" alt="Bild 3" class="gallery-thumbnail" onclick="openGallery(2)">
-    </div>
-    <div class="gallery-item">
-        <img src="tree_far.png" alt="Bild 4" class="gallery-thumbnail" onclick="openGallery(3)">
     </div>
 </div>
 
@@ -141,6 +133,30 @@ Wir freuen uns, euch durch Oliamo in diesen Austausch einzubeziehen. </div>
 Der wichtigste Schritt auf dem Weg zu unserem Olivenöl ist die Ernte der Oliven – ein anstrengender, schweißtreibender und mühsamer Prozess. Zunächst schütteln wir die Äste, damit die schon etwas lockeren Oliven auf die unter den Bäumen liegenden Netze fallen. Danach kämmen wir die Bäume mit einem elektrischen Rechen, um die noch fest sitzenden Oliven abzustreifen.
 
 Die Oliven, die auf den Netzen liegen, werden auf einem Anhänger gesammelt und innerhalb der nächsten 48 Stunden zum Pressen gebracht. Nach dem Wiegen werden die Blätter entfernt, und die Oliven werden gewaschen und gemahlen. Der entstehende Olivenbrei wird für etwa 30 Minuten bei 25 °C gemischt und gerührt. Dabei trennt sich das Öl bereits vom Brei, wird jedoch noch in einer Presse extrahiert. Anschließend wird das Öl in einer Zentrifuge von Wasser gereinigt. Das Ergebnis ist das wunderbar köstliche Oliamo-Olivenöl von Opa Totó.        
+    </div>
+</div>
+
+<!-- Galerie mit vier Bildern -->
+<div class="image-gallery">
+    <div class="gallery-item">
+        <img src="leaveolive.png" alt="Bild 1" class="gallery-thumbnail" onclick="openGallery(0)">
+    </div>
+    <div class="gallery-item">
+        <img src="rows.png" alt="Bild 2" class="gallery-thumbnail" onclick="openGallery(1)">
+    </div>
+    <div class="gallery-item">
+        <img src="tree_far.png" alt="Bild 3" class="gallery-thumbnail" onclick="openGallery(2)">
+    </div>
+    <div class="gallery-item">
+        <img src="harvest.png" alt="Bild 4" class="gallery-thumbnail" onclick="openGallery(3)">
+    </div>
+</div>
+
+<!-- Galerie-Overlay für die größere Ansicht -->
+<div id="gallery-modal" class="gallery-modal">
+    <span class="close-btn" onclick="closeGallery()">&times;</span>
+    <div class="modal-content">
+        <img id="modal-image" src="" alt="Großes Bild">
     </div>
 </div>
 
@@ -209,10 +225,11 @@ const images = [
     "sky.png",
     "leaves.png",
     "full.png",
-    "leaveolive.png",
     "oliveto.jpg",
+    "leaveolive.png",
     "rows.png",
-    "tree_far.png"
+    "tree_far.png",
+    "harvest.png"
 ];
 
 
