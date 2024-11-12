@@ -195,33 +195,50 @@ body {
     
     
     /* Media Query für kleine Bildschirme (z.B. Smartphones) */
-    @media (max-width: 768px) {
-    /* Reduziert die Höhe des Textfeldes auf kleineren Geräten */
+   /* Stil für das Textfeld */
+.text-field {
+    width: 100%;                         /* Textfeld auf volle Breite setzen */
+    min-height: 50px;                    /* Minimale Höhe des Textfeldes */
+    padding: 20px;
+    font-size: 16px;
+    color: #333;
+    background-color: #e6e490;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;                        /* Verhindert das manuelle Vergrößern */
+    box-sizing: border-box;              /* Berücksichtigt Padding und Border in der Größe */
+    text-align: justify;                 /* Text im Blocksatz */
+    font-family: 'Lexend Deca', sans-serif;
+    overflow: hidden;                    /* Verhindert Scrollbalken */
+    word-wrap: break-word;               /* Bricht lange Wörter um */
+    white-space: pre-wrap;               /* Umbrüche korrekt anzeigen */
+    height: auto;                        /* Verhindert eine feste Höhe und lässt das Textfeld mit dem Inhalt wachsen */
+}
+
+/* Reduziert die Höhe auf kleineren Geräten */
+@media (max-width: 768px) {
     .text-field {
-    height: auto; /* Kleinere Höhe auf Smartphones */
+        padding: 15px;  /* Weniger Padding auf kleinen Geräten */
+        font-size: 14px; /* Etwas kleinere Schriftgröße auf kleinen Geräten */
     }
     
-    /* Verkleinert die Schriftgröße der Überschrift */
     .text-block h2 {
-    font-size: 28px;  /* Kleinere Schriftgröße auf mobilen Geräten */
+        font-size: 28px;  /* Kleinere Schriftgröße auf mobilen Geräten */
     }
-    
-    /* Reduziert das Padding des Textblocks auf kleinen Geräten */
-    .text-block {
-    padding: 20px; /* Weniger Abstand um den Textblock */
-    }
-    }
-    
-    /* Optional: Media Query für sehr kleine Bildschirme (z.B. kleinere Smartphones) */
-    @media (max-width: 480px) {
+}
+
+/* Optional: Media Query für sehr kleine Bildschirme (z.B. kleinere Smartphones) */
+@media (max-width: 480px) {
     .text-block h2 {
-    font-size: 24px; /* Noch kleinere Schriftgröße auf sehr kleinen Geräten */
+        font-size: 24px;  /* Noch kleinere Schriftgröße auf sehr kleinen Geräten */
     }
     
     .text-field {
-    height: auto; /* Noch kleinere Höhe für sehr kleine Bildschirme */
+        padding: 10px;  /* Noch weniger Padding auf sehr kleinen Geräten */
+        font-size: 14px; /* Weiter reduzierte Schriftgröße auf sehr kleinen Geräten */
     }
-    }
+}
+
     
     
     /* Optional: Stil für den Fokus des Textfeldes */
