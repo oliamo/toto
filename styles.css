@@ -26,6 +26,7 @@
     border: none;
     padding: 10px;
     cursor: pointer;
+    margin-right: 20px; /* Fügt einen rechten Abstand hinzu, um den Button nach links zu verschieben */
 }
 
 .menu-button:hover {
@@ -134,44 +135,53 @@ body {
         }
 
         /* Stil für den Textblock */
-        .text-block {
-            background-color: #e6e490;
-            padding: 20px;
-            margin: 10px auto;
-            width: 100%; /* Volle Breite, wenn der Bildschirm klein ist */
-            max-width: 900px; /* Maximal auf 900px breiten Textblock */
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: justify;  /* Zentriert den Inhalt */
-            font-family: 'Lexend Deca', sans-serif;
-        }
+.text-block {
+    background-color: #e6e490;
+    padding: 20px;
+    margin: 10px auto;
+    width: 100%; /* Volle Breite auf mobilen Geräten */
+    max-width: 900px; /* Maximal auf 900px breiten Textblock */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: justify;  /* Text im Blocksatz */
+    font-family: 'Lexend Deca', sans-serif;
+}
 
-        /* Stil für die Überschrift */
-        .text-block h2 {
-            font-size: 36px;
-            color: green;
-            margin-bottom: 10px;
-            text-align: center;
-            font-family: 'Lexend Deca', sans-serif;
-        }
+/* Stil für die Überschrift */
+.text-block h2 {
+    font-size: 36px;
+    color: green;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+}
 
-       /* Stil für das Textfeld */
-        .text-field {
-            width: 100%;                         /* Breite des Textfeldes auf 100% setzen */
-            min-height: 50px;                    /* Minimale Höhe des Textfeldes */
-            padding: 20px;
-            font-size: 16px;
-            color: #333;
-            background-color: #e6e490;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            resize: none;                        /* Verhindert das manuelle Vergrößern des Textfeldes */
-            box-sizing: border-box;              /* Stellt sicher, dass Padding und Border in die Gesamtgröße einbezogen werden */
-            text-align: justify;                 /* Text wird im Blocksatz dargestellt */
-            font-family: 'Lexend Deca', sans-serif;
-            overflow: hidden;                    /* Verhindert, dass ein Scrollbalken erscheint */
-            word-wrap: break-word;               /* Bricht lange Wörter, um sie ins Textfeld zu bekommen */
-        }
+/* Stil für das Textfeld */
+.text-field {
+    width: 100%;                         /* Textfeld breiter machen */
+    min-height: 50px;                    /* Minimale Höhe, damit es nicht zu klein ist */
+    padding: 20px;
+    font-size: 16px;
+    color: #333;
+    background-color: #e6e490;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;                        /* Verhindert das manuelle Vergrößern */
+    box-sizing: border-box;              /* Berücksichtigt Padding und Border in der Größe */
+    text-align: justify;                 /* Text wird im Blocksatz dargestellt */
+    font-family: 'Lexend Deca', sans-serif;
+    overflow: hidden;                    /* Verhindert Scrollbalken */
+    word-wrap: break-word;               /* Bricht lange Wörter am Rand */
+    height: auto;                        /* Textfeld wächst mit dem Inhalt */
+    white-space: pre-wrap;               /* Zeilenumbrüche werden im Textfeld unterstützt */
+}
+
+/* Optional: Eine Regel, um Text im Textfeld gut sichtbar zu halten */
+.text-field:focus {
+    outline: none;                       /* Verhindert die Standard-Fokus-Grenze */
+    border-color: #6cbf6b;               /* Neue Farbe, wenn das Textfeld aktiv ist */
+}
+
 
         /* Media Query für kleine Bildschirme (z.B. Smartphones) */
         @media (max-width: 768px) {

@@ -108,16 +108,30 @@ Die Oliven von den Netzen werden auf einem Anhänger gesammelt und innerhalb der
 </div>
 
    <!-- JavaScript für das Menü -->
-   <script>
+<script>
+    // Funktion, die das Menü ein- oder ausblendet
     function toggleMenu() {
         const menu = document.getElementById('menu');
-        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
     }
 
+    // Funktion, die zum "Language"-Bereich scrollt
     function scrollToLanguage() {
         document.getElementById('language').scrollIntoView({ behavior: 'smooth' });
     }
+
+    // Funktion, die das Menü schließt, wenn irgendwo außerhalb des Menüs geklickt wird
+    window.addEventListener('click', function(event) {
+        const menu = document.getElementById('menu');
+        const menuButton = document.querySelector('.menu-button');
+
+        // Überprüfen, ob der Klick nicht auf das Menü oder den Menü-Button erfolgt
+        if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
+            menu.style.display = 'none';  // Menü einklappen
+        }
+    });
 </script>
+
 
 <script>
     // Bilder für die Galerie (kannst du durch echte URLs ersetzen)
