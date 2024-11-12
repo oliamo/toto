@@ -5,7 +5,7 @@
             background-color: rgb(178, 194, 110);
         }
 
-        /* Grüner Balken oben mit Menü-Button */
+ /* Grüner Balken oben mit Menü-Button */
 .top-bar {
     background-color: #e6e490;
     color: white;
@@ -20,6 +20,14 @@
     z-index: 1000;  /* Stellt sicher, dass sie immer über dem anderen Inhalt bleibt */
 }
 
+/* Logo (kleines Bild) */
+.top-bar .logo {
+    height: 40px; /* Höhe des Logos anpassen */
+    width: auto;  /* Breite wird automatisch angepasst, um das Seitenverhältnis beizubehalten */
+    margin-left: 10px;  /* Optionaler Abstand nach links */
+}
+
+/* Menü-Button */
 .menu-button {
     background-color: white;
     color: rgb(110, 156, 110);
@@ -40,24 +48,8 @@
     top: 50px;  /* Der Abstand des Menüs zum oberen Rand */
     right: 0;
     background-color: white;
-    color: rgb(110, 156, 110);
-    width: 200px;
-    border: 1px solid rgb(110, 156, 110);
-    padding: 10px;
-    z-index: 999;  /* Stellt sicher, dass das Menü über dem anderen Inhalt erscheint */
-}
+    color: rg
 
-/* Menü-Link-Stile */
-.menu a {
-    display: block;
-    text-decoration: none;
-    color: rgb(110, 156, 110);
-    padding: 10px 0;
-}
-
-.menu a:hover {
-    background-color: #f0f0f0;
-}
 
 /* Damit der Inhalt nicht hinter dem fixierten Menü verborgen wird */
 body {
