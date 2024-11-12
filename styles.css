@@ -1,12 +1,12 @@
-        body {
-            font-family: 'Lexend Deca', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: rgb(178, 194, 110);
-        }
-
- /* Grüner Balken oben mit Menü-Button */
-.top-bar {
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(178, 194, 110);
+    }
+    
+    /* Grüner Balken oben mit Menü-Button */
+    .top-bar {
     background-color: #e6e490;
     color: white;
     padding: 10px;
@@ -18,116 +18,124 @@
     left: 0;
     width: 100%;  /* Stellt sicher, dass die Top-Bar die gesamte Breite des Bildschirms einnimmt */
     z-index: 1000;  /* Stellt sicher, dass sie immer über dem anderen Inhalt bleibt */
-}
-
-/* Logo (kleines Bild) */
-.top-bar .logo {
-    height: 100%;  /* Bildhöhe an die Höhe des Balkens anpassen */
-    width: auto;   /* Breite wird automatisch angepasst, um das Seitenverhältnis zu wahren */
-    margin-left: 10px;  /* Optionaler Abstand nach links */
-}
-
-/* Menü-Button */
-.menu-button {
+    }
+    
+    .menu-button {
     background-color: white;
     color: rgb(110, 156, 110);
     border: none;
     padding: 10px;
     cursor: pointer;
-    margin-right: 30px; /* Fügt einen rechten Abstand hinzu, um den Button nach links zu verschieben */
-}
-
-.menu-button:hover {
+    margin-right: 20px; /* Fügt einen rechten Abstand hinzu, um den Button nach links zu verschieben */
+    }
+    
+    .menu-button:hover {
     background-color: #f0f0f0;
-}
-
-/* Menü-Overlay */
-.menu {
+    }
+    
+    /* Menü-Overlay */
+    .menu {
     display: none;
     position: fixed;
     top: 50px;  /* Der Abstand des Menüs zum oberen Rand */
     right: 0;
     background-color: white;
-    color: rg
-}
-
-/* Damit der Inhalt nicht hinter dem fixierten Menü verborgen wird */
-body {
+    color: rgb(110, 156, 110);
+    width: 200px;
+    border: 1px solid rgb(110, 156, 110);
+    padding: 10px;
+    z-index: 999;  /* Stellt sicher, dass das Menü über dem anderen Inhalt erscheint */
+    }
+    
+    /* Menü-Link-Stile */
+    .menu a {
+    display: block;
+    text-decoration: none;
+    color: rgb(110, 156, 110);
+    padding: 10px 0;
+    }
+    
+    .menu a:hover {
+    background-color: #f0f0f0;
+    }
+    
+    /* Damit der Inhalt nicht hinter dem fixierten Menü verborgen wird */
+    body {
     padding-top: 60px;  /* Dieser Abstand sorgt dafür, dass der Inhalt unterhalb der fixierten Top-Bar beginnt */
-}
-
-
-        /* Hauptinhalt */
-        .content {
-            text-align: center;
-            padding: 50px;
-        }
-
-        .content h1 {
-            font-family: 'Lexend Deca', sans-serif;
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-
-        .content img {
-            width: 300px;
-            height: auto;
-            margin-bottom: 30px;
-        }
-
-        .section {
-            margin-top: 50px;
-        }
-
-        /* Flaggen */
-        .flags {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .flag {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-size: cover;
-            background-position: center;
-            cursor: pointer;
-        }
-
-        .flag.gb {
-            background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg');
-        }
-
-        .flag.it {
-            background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg');
-        }
-
-        .flag.de {
-            background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg');
-        }
-
-        /* Stil für den neuen Bereich */
-        .about {
-            background-color: #f9f9f9;
-            padding: 50px;
-            margin-top: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .about h2 {
-            font-size: 36px;
-            color: rgb(55, 104, 55);
-        }
-
-        .about p {
-            font-size: 18px;
-            color: #333;
-        }
-
-        /* Stil für den Textblock */
-.text-block {
+    }
+    
+    
+    /* Hauptinhalt */
+    .content {
+    text-align: center;
+    padding: 50px;
+    }
+    
+    .content h1 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+    }
+    
+    .content img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 30px;
+    }
+    
+    .section {
+    margin-top: 50px;
+    }
+    
+    /* Flaggen */
+    .flags {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    }
+    
+    .flag {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    }
+    
+    .flag.gb {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg');
+    }
+    
+    .flag.it {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg');
+    }
+    
+    .flag.de {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg');
+    }
+    
+    /* Stil für den neuen Bereich */
+    .about {
+    background-color: #f9f9f9;
+    padding: 50px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .about h2 {
+    font-size: 36px;
+    color: rgb(55, 104, 55);
+    }
+    
+    .about p {
+    font-size: 18px;
+    color: #333;
+    }
+    
+    /* Stil für den Textblock */
+    .text-block {
     background-color: #e6e490;
     padding: 20px;
     margin: 10px auto;
@@ -137,22 +145,23 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: justify;  /* Text im Blocksatz */
     font-family: 'Lexend Deca', sans-serif;
-    height: auto;                        /* Textfeld wächst mit dem Text */
-}
-
-/* Stil für die Überschrift */
-.text-block h2 {
+        height: auto;                        /* Textfeld wächst mit dem Text */
+    }
+    
+    /* Stil für die Überschrift */
+    .text-block h2 {
     font-size: 36px;
     color: green;
     margin-bottom: 10px;
     text-align: center;
     font-family: 'Lexend Deca', sans-serif;
-}
-
-/* Stil für das Textfeld */
-.text-field {
+    }
+    
+    /* Stil für das Textfeld */
+    .text-field {
     width: 100%;                         /* Textfeld breiter machen */
-    min-height: 50px;                    /* Minimale Höhe des Textfeldes */
+        min-height: 50px;                    /* Minimale Höhe, damit es nicht zu klein ist */
+        min-height: 50px;                    /* Minimale Höhe des Textfeldes */
     padding: 20px;
     font-size: 16px;
     color: #333;
@@ -164,150 +173,152 @@ body {
     text-align: justify;                 /* Text wird im Blocksatz dargestellt */
     font-family: 'Lexend Deca', sans-serif;
     overflow: hidden;                    /* Verhindert Scrollbalken */
-    word-wrap: break-word;               /* Bricht lange Wörter um */
-    white-space: pre-wrap;               /* Umbrüche korrekt anzeigen */
-    height: auto;                        /* Textfeld wächst mit dem Text */
-}
-
-/* Optional: Eine Regel, um Text im Textfeld gut sichtbar zu halten */
-.text-field:focus {
+        word-wrap: break-word;               /* Bricht lange Wörter am Rand */
+        height: auto;                        /* Textfeld wächst mit dem Inhalt */
+        white-space: pre-wrap;               /* Zeilenumbrüche werden im Textfeld unterstützt */
+        word-wrap: break-word;               /* Bricht lange Wörter um */
+        white-space: pre-wrap;               /* Umbrüche korrekt anzeigen */
+        height: auto;                        /* Textfeld wächst mit dem Text */
+    }
+    
+    /* Optional: Eine Regel, um Text im Textfeld gut sichtbar zu halten */
+    .text-field:focus {
     outline: none;                       /* Verhindert die Standard-Fokus-Grenze */
     border-color: #6cbf6b;               /* Neue Farbe, wenn das Textfeld aktiv ist */
-}
-
-
-        /* Media Query für kleine Bildschirme (z.B. Smartphones) */
-        @media (max-width: 768px) {
-            /* Reduziert die Höhe des Textfeldes auf kleineren Geräten */
-            .text-field {
-                height: 300px; /* Kleinere Höhe auf Smartphones */
-            }
-
-            /* Verkleinert die Schriftgröße der Überschrift */
-            .text-block h2 {
-                font-size: 28px;  /* Kleinere Schriftgröße auf mobilen Geräten */
-            }
-
-            /* Reduziert das Padding des Textblocks auf kleinen Geräten */
-            .text-block {
-                padding: 20px; /* Weniger Abstand um den Textblock */
-            }
-        }
-
-        /* Optional: Media Query für sehr kleine Bildschirme (z.B. kleinere Smartphones) */
-        @media (max-width: 480px) {
-            .text-block h2 {
-                font-size: 24px; /* Noch kleinere Schriftgröße auf sehr kleinen Geräten */
-            }
-
-            .text-field {
-                height: 200px; /* Noch kleinere Höhe für sehr kleine Bildschirme */
-            }
-        }
-
-
-        /* Optional: Stil für den Fokus des Textfeldes */
-        .text-field:focus {
-            border-color: green;
-            outline: none;
-        }
-
-        /* Stil für die Galerie mit Bildern nebeneinander */
-        .image-gallery {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px; /* Abstand zwischen den Bildern */
-            margin: 40px 0;
-            padding: 0 10px;
-        }
-
-        /* Stil für jedes einzelne Bild in der Galerie */
-        .gallery-item {
-            width: 23%; /* Damit 4 Bilder nebeneinander passen */
-            text-align: center;
-        }
-
-        /* Stil für die kleinen Thumbnails (Bilder in der Galerie) */
-        .gallery-thumbnail {
-            width: 100%;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-
-        /* Hover-Effekt für die Bilder */
-        .gallery-thumbnail:hover {
-            transform: scale(1.1); /* Bild wird etwas vergrößert, wenn man darüber fährt */
-        }
-
-        /* Modal (große Ansicht) der Bilder */
-        .gallery-modal {
-            display: none; /* Versteckt das Modal standardmäßig */
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8); /* Dunkler Hintergrund */
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-        }
-
-        /* Inhalt des Modals (Bild) */
-        .modal-content {
-            text-align: center;
-        }
-
-        /* Das Bild im Modal */
-        #modal-image {
-            max-width: 90%;
-            max-height: 80%;
-        }
-
-        /* Schließen-Button */
-        .close-btn {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-size: 30px;
-            color: white;
-            cursor: pointer;
-            z-index: 1100;
-        }
-/* Grundlegendes Styling für das Kontaktformular */
-        form {
-            width: 100%;
-            max-width: 500px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #f4f4f4;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        label {
-            font-weight: bold;
-            margin-top: 10px;
-            display: block;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 8px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
+    }
+    
+    
+    /* Media Query für kleine Bildschirme (z.B. Smartphones) */
+    @media (max-width: 768px) {
+    /* Reduziert die Höhe des Textfeldes auf kleineren Geräten */
+    .text-field {
+    height: 300px; /* Kleinere Höhe auf Smartphones */
+    }
+    
+    /* Verkleinert die Schriftgröße der Überschrift */
+    .text-block h2 {
+    font-size: 28px;  /* Kleinere Schriftgröße auf mobilen Geräten */
+    }
+    
+    /* Reduziert das Padding des Textblocks auf kleinen Geräten */
+    .text-block {
+    padding: 20px; /* Weniger Abstand um den Textblock */
+    }
+    }
+    
+    /* Optional: Media Query für sehr kleine Bildschirme (z.B. kleinere Smartphones) */
+    @media (max-width: 480px) {
+    .text-block h2 {
+    font-size: 24px; /* Noch kleinere Schriftgröße auf sehr kleinen Geräten */
+    }
+    
+    .text-field {
+    height: 200px; /* Noch kleinere Höhe für sehr kleine Bildschirme */
+    }
+    }
+    
+    
+    /* Optional: Stil für den Fokus des Textfeldes */
+    .text-field:focus {
+    border-color: green;
+    outline: none;
+    }
+    
+    /* Stil für die Galerie mit Bildern nebeneinander */
+    .image-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Abstand zwischen den Bildern */
+    margin: 40px 0;
+    padding: 0 10px;
+    }
+    
+    /* Stil für jedes einzelne Bild in der Galerie */
+    .gallery-item {
+    width: 23%; /* Damit 4 Bilder nebeneinander passen */
+    text-align: center;
+    }
+    
+    /* Stil für die kleinen Thumbnails (Bilder in der Galerie) */
+    .gallery-thumbnail {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    }
+    
+    /* Hover-Effekt für die Bilder */
+    .gallery-thumbnail:hover {
+    transform: scale(1.1); /* Bild wird etwas vergrößert, wenn man darüber fährt */
+    }
+    
+    /* Modal (große Ansicht) der Bilder */
+    .gallery-modal {
+    display: none; /* Versteckt das Modal standardmäßig */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Dunkler Hintergrund */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    }
+    
+    /* Inhalt des Modals (Bild) */
+    .modal-content {
+    text-align: center;
+    }
+    
+    /* Das Bild im Modal */
+    #modal-image {
+    max-width: 90%;
+    max-height: 80%;
+    }
+    
+    /* Schließen-Button */
+    .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1100;
+    }
+    /* Grundlegendes Styling für das Kontaktformular */
+    form {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    }
+    
+    input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    }
+    
+    button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    
+    button:hover {
+    background-color: #45a049;
