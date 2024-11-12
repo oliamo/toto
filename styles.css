@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'frutiger';
-    src: url('FrutigerLTStd-Cn.woff2') format('woff2'),
+    src: url('FrutigerLTStd-Cn.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     }
@@ -222,6 +222,12 @@ body {
     text-align: center;
     }
     /* Einzelnes Bild (Thumbnail) */
+    .image-gallery-single {
+        display: flex;                    /* Flexbox für die Ausrichtung */
+        justify-content: center;          /* Zentriert das Bild horizontal */
+        align-items: center;              /* Zentriert das Bild vertikal */
+        height: 100vh;                    /* Stellt sicher, dass der Container die volle Bildschirmhöhe einnimmt */
+    }
     .gallery-item-single {
     text-align: center;               /* Zentriert das Bild innerhalb des Elements */
     }
