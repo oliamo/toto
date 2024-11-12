@@ -16,7 +16,7 @@ body {
     position: fixed;  /* Fixiert die Top-Bar oben auf der Seite */
     top: 0;  /* Positioniert sie an der obersten Stelle */
     left: 0;
-    height: 10px;
+    height: 50px;
     width: 100%;  /* Stellt sicher, dass die Top-Bar die gesamte Breite des Bildschirms einnimmt */
     z-index: 1000;  /* Stellt sicher, dass sie immer über dem anderen Inhalt bleibt */
     }
