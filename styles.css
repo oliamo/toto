@@ -34,7 +34,7 @@
     border: none;
     padding: 10px;
     cursor: pointer;
-    margin-right: 20px; /* Fügt einen rechten Abstand hinzu, um den Button nach links zu verschieben */
+    margin-right: 30px; /* Fügt einen rechten Abstand hinzu, um den Button nach links zu verschieben */
 }
 
 .menu-button:hover {
