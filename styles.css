@@ -190,7 +190,7 @@ body {
 /* Media Query für kleine Bildschirme (z.B. Smartphones) */
 @media (max-width: 768px) {
     .text-field {
-        padding: 15px;  /* Weniger Padding auf kleinen Geräten */
+        padding: 10px;  /* Weniger Padding auf kleinen Geräten */
         font-size: 14px; /* Etwas kleinere Schriftgröße auf kleinen Geräten */
         height: auto;    /* Höhe auf auto setzen, damit es sich an den Text anpasst */
     }
@@ -207,7 +207,7 @@ body {
     }
     
     .text-field {
-        padding: 10px;  /* Noch weniger Padding auf sehr kleinen Geräten */
+        padding: 8px;  /* Noch weniger Padding auf sehr kleinen Geräten */
         font-size: 14px; /* Weiter reduzierte Schriftgröße auf sehr kleinen Geräten */
         height: auto;    /* Höhe weiterhin auf auto setzen */
     }
