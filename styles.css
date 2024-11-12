@@ -22,7 +22,7 @@ body {
     }
     /* Logo (Bild) */
     .top-bar .logo {
-        height: 80%;  /* Bildhöhe an die Höhe des Balkens anpassen */
+        height: 4%;  /* Bildhöhe an die Höhe des Balkens anpassen */
         width: auto;   /* Breite wird automatisch angepasst, um das Seitenverhältnis zu wahren */
         margin-left: 10px;  /* Optionaler Abstand nach links */
     }
