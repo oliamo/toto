@@ -22,8 +22,8 @@
 
 /* Logo (kleines Bild) */
 .top-bar .logo {
-    height: 40px; /* Höhe des Logos anpassen */
-    width: auto;  /* Breite wird automatisch angepasst, um das Seitenverhältnis beizubehalten */
+    height: 100%;  /* Bildhöhe an die Höhe des Balkens anpassen */
+    width: auto;   /* Breite wird automatisch angepasst, um das Seitenverhältnis zu wahren */
     margin-left: 10px;  /* Optionaler Abstand nach links */
 }
 
