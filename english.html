@@ -311,6 +311,27 @@ window.onclick = function(event) {
 }
 
 </script>
+
+<!-- Impressum overlay */-->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const overlay = document.getElementById('impressumOverlay');
+        const impressumLink = document.getElementById('openImpressum');
+    
+        impressumLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            overlay.style.display = 'flex'; // 'flex' wird verwendet, um den Inhalt zu zentrieren
+        });
+    
+        overlay.addEventListener('click', function(event) {
+            // Schließt das Overlay, wenn auf den Hintergrund (nicht den Inhalt) geklickt wird
+            if (event.target === overlay) {
+                overlay.style.display = 'none';
+            }
+        });
+    })
+     </script>
+     
 <!--
     <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
