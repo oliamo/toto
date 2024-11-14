@@ -193,7 +193,7 @@ The olives that fall onto the nets are collected onto a trailer and taken to the
     </div>
 </footer>
 
-<div id="footerOverlay">
+<div id="impressumOverlay">
     <div id="impressumContent">
         <h2>Impressum</h2>
         <p><strong>Information according to § 5 TMG (Telemedia Act):</strong></p>
@@ -202,7 +202,7 @@ The olives that fall onto the nets are collected onto a trailer and taken to the
         <p><strong>E-Mail:</strong><br>oliamototo@gmail.com</p>
     </div>
 </div>
-<div id="footerOverlay">
+<div id="dataOverlay">
     <div id="dataContent">
         <h2>Privacy Policy</h2>
 
@@ -315,9 +315,8 @@ window.onclick = function(event) {
 <!-- Impressum overlay */-->
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const overlay = document.getElementById('footerOverlay');
-        const impressumLink = document.getElementById('openImpressum', 'openDataprivacy');
-        /*const impressumLink = document.getElementById('openDataprivacy');*/
+        const overlay = document.getElementById('impressumOverlay');
+        const impressumLink = document.getElementById('openImpressum');
     
         impressumLink.addEventListener('click', function(event) {
             event.preventDefault();
@@ -332,6 +331,24 @@ window.onclick = function(event) {
         });
     })
      </script>
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const overlay = document.getElementById('dataOverlay');
+            const impressumLink = document.getElementById('openDataprivacy');
+        
+            impressumLink.addEventListener('click', function(event) {
+                event.preventDefault();
+                overlay.style.display = 'flex'; // 'flex' wird verwendet, um den Inhalt zu zentrieren
+            });
+        
+            overlay.addEventListener('click', function(event) {
+                // Schließt das Overlay, wenn auf den Hintergrund (nicht den Inhalt) geklickt wird
+                if (event.target === overlay) {
+                    overlay.style.display = 'none';
+                }
+            });
+        })
+         </script>
 
 <!--
     <?php
