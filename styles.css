@@ -256,47 +256,50 @@ body {
     cursor: pointer;
     transition: transform 0.3s ease;
     }
-    
+
     /* Hover-Effekt für die Bilder */
     .gallery-thumbnail:hover {
     transform: scale(1.1); /* Bild wird etwas vergrößert, wenn man darüber fährt */
     }
     
-    /* Modal (große Ansicht) der Bilder */
-    .gallery-modal {
-    display: none; /* Versteckt das Modal standardmäßig */
+    /* Galerie-Overlay */
+.gallery-modal {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Dunkler Hintergrund */
-    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Halbtransparentes Overlay */
+    display: none; /* Modal ist anfangs verborgen */
     justify-content: center;
+    align-items: center;
     z-index: 1000;
-    }
-    
-    /* Inhalt des Modals (Bild) */
-    .modal-content {
-    text-align: center;
-    }
-    
-    /* Das Bild im Modal */
-    #modal-image {
+}
+
+/* Modal-Inhalt */
+.modal-content {
     max-width: 90%;
-    max-height: 80%;
-    }
-    
-    /* Schließen-Button */
-    .close-btn {
+    max-height: 90%;
+    text-align: center;
+}
+
+#modal-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Schließen Button */
+.close-btn {
     position: absolute;
     top: 20px;
     right: 20px;
     font-size: 30px;
-    color: rgb(255, 252, 239);
+    color: white;
     cursor: pointer;
-    z-index: 1100;
-    }
+}
+
+
+
     /* Grundlegendes Styling für das Kontaktformular */
     form {
     width: 100%;

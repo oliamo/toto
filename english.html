@@ -297,7 +297,7 @@ function openGallery(index) {
     modal.style.display = "flex";
 }
 
-/// Funktion, um das Modal zu schließen
+// Funktion, um das Modal zu schließen
 function closeGallery() {
     const modal = document.getElementById("gallery-modal");
     modal.style.display = "none";
@@ -306,11 +306,11 @@ function closeGallery() {
 // Schließt das Modal, wenn der Benutzer außerhalb des Bildes klickt
 window.onclick = function(event) {
     const modal = document.getElementById("gallery-modal");
-    // Überprüfen, ob der Klick außerhalb des Modal-Inhalts stattgefunden hat
     if (event.target === modal) {
         closeGallery();
     }
 }
+
 
 </script>
 
