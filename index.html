@@ -128,11 +128,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     overlay.addEventListener('click', function(event) {
+        // Schließt das Overlay, wenn auf den Hintergrund (nicht den Inhalt) geklickt wird
         if (event.target === overlay) {
             overlay.style.display = 'none';
         }
     });
-});
+})
  </script>
 
 </body>
