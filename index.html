@@ -70,17 +70,17 @@
         <div class="footer-section legal">
             <ul>
                 <li><a href="#">Data Privacy</a></li>
-                <li><a href="#">Impressum</a></li>
+                <li><a href="#" id="openImpressum">Impressum</a></li>
                 <!-- <li><a href="#">AGB</a></li> -->
             </ul>
         </div>
-        
     </div>
 
     <div class="footer-bottom">
         <p>© 2024 OLIAMO. Alle Rechte vorbehalten.</p>
     </div>
 </footer>
+
 <div id="impressumOverlay">
     <div id="impressumContent">
         <h2>Impressum</h2>
@@ -120,11 +120,11 @@
  <script>
 document.addEventListener('DOMContentLoaded', function() {
     const overlay = document.getElementById('impressumOverlay');
-    const openLink = document.getElementById('openImpressum');
+    const impressumLink = document.getElementById('openImpressum');
 
-    openLink.addEventListener('click', function(event) {
+    impressumLink.addEventListener('click', function(event) {
         event.preventDefault();
-        overlay.style.display = 'block';
+        overlay.style.display = 'flex'; // 'flex' wird verwendet, um den Inhalt zu zentrieren
     });
 
     overlay.addEventListener('click', function(event) {
