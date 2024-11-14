@@ -427,6 +427,19 @@ body {
     align-items: center;
     display: flex; /* Flexbox für Zentrierung */
 }
+
+#impressumContent {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 80%;
+    margin: auto;
+}
+
+#impressumContent h2 {
+    margin-top: 0;
+}
 #dataOverlay {
     display: none; /* Sicherstellen, dass das Overlay initial versteckt ist */
     position: fixed;
@@ -440,7 +453,7 @@ body {
     align-items: center;
     display: flex; /* Flexbox für Zentrierung */
 }
-#impressumContent {
+#dataContent {
     background: white;
     padding: 20px;
     border-radius: 8px;
@@ -449,6 +462,6 @@ body {
     margin: auto;
 }
 
-#impressumContent h2 {
+#dataContent h2 {
     margin-top: 0;
 }
