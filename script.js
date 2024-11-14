@@ -38,7 +38,7 @@
         });
     })
     
-       /*document.addEventListener('DOMContentLoaded', function() {
+       document.addEventListener('DOMContentLoaded', function() {
             const overlay = document.getElementById('dataOverlay');
             const impressumLink = document.getElementById('openDataprivacy');
         
@@ -53,4 +53,4 @@
                     overlay.style.display = 'none';
                 }
             });
-        })*/
+        })
