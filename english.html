@@ -316,8 +316,8 @@ window.onclick = function(event) {
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const overlay = document.getElementById('footerOverlay');
-        const impressumLink = document.getElementById('openImpressum');
-        const impressumLink = document.getElementById('openDataprivacy');
+        const impressumLink = document.getElementById('openImpressum', 'openDataprivacy');
+        /*const impressumLink = document.getElementById('openDataprivacy');*/
     
         impressumLink.addEventListener('click', function(event) {
             event.preventDefault();
