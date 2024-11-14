@@ -193,7 +193,7 @@ The olives that fall onto the nets are collected onto a trailer and taken to the
     </div>
 </footer>
 
-<div id="impressumOverlay">
+<div id="footerOverlay">
     <div id="impressumContent">
         <h2>Impressum</h2>
         <p><strong>Information according to § 5 TMG (Telemedia Act):</strong></p>
@@ -202,7 +202,7 @@ The olives that fall onto the nets are collected onto a trailer and taken to the
         <p><strong>E-Mail:</strong><br>oliamototo@gmail.com</p>
     </div>
 </div>
-<div id="impressumOverlay">
+<div id="footerOverlay">
     <div id="impressumContent">
         <h2>Privacy Policy</h2>
 
@@ -315,8 +315,8 @@ window.onclick = function(event) {
 <!-- Impressum overlay */-->
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const overlay = document.getElementById('impressumOverlay');
-        const impressumLink = document.getElementById('openImpressum');
+        const overlay = document.getElementById('footerOverlay');
+        const impressumLink = document.getElementById('footerOverlay');
     
         impressumLink.addEventListener('click', function(event) {
             event.preventDefault();
@@ -331,7 +331,7 @@ window.onclick = function(event) {
         });
     })
      </script>
-     
+
 <!--
     <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
