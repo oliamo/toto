@@ -195,6 +195,7 @@ body {
         padding: 10px;  /* Weniger Padding auf kleinen Geräten */
         font-size: 14px; /* Etwas kleinere Schriftgröße auf kleinen Geräten */
         height: auto;    /* Höhe auf auto setzen, damit es sich an den Text anpasst */
+        max-width: 100%; /* Sicherstellen, dass das Textfeld nicht breiter wird */
     }
     
     .text-block h2 {
@@ -212,6 +213,7 @@ body {
         padding: 8px;  /* Noch weniger Padding auf sehr kleinen Geräten */
         font-size: 14px; /* Weiter reduzierte Schriftgröße auf sehr kleinen Geräten */
         height: auto;    /* Höhe weiterhin auf auto setzen */
+        max-width: 100%; /* Sicherstellen, dass das Textfeld nicht breiter wird */
     }
 } 
     

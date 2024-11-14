@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <script src="script.js"></script>
 
     <!-- Grüner Balken mit Menü -->
     <div class="top-bar">
@@ -202,44 +203,43 @@ Die Oliven, die auf den Netzen liegen, werden auf einem Anhänger gesammelt und 
         <p><strong>E-Mail:</strong><br>oliamototo@gmail.com</p>
     </div>
 </div>
-<div id="impressumOverlay">
-    <div id="impressumContent">
-        <h2>Privacy Policy</h2>
+<div id="dataOverlay">
+    <div id="dataContent">
+        <h2>Datenschutzerklärung</h2>
 
-<p>We take the privacy of your personal information seriously. This privacy policy explains how we collect, use, and protect your data on our website.</p>
-
-<h3>1. Controller</h3>
-<p>Company Name: Example Company<br>
-Address: Example Street 1, 12345 Example City, Germany<br>
-Email: info@example.com</p>
-
-<h3>2. Data Collection</h3>
-<p>We collect personal data such as name, email address, and IP addresses when you use our services. This data is processed to provide you with services and improve your user experience.</p>
-
-<h3>3. Legal Basis</h3>
-<p>We process your data based on your consent, our contractual obligations, or our legitimate interest in improving our website and services.</p>
-
-<h3>4. Data Sharing</h3>
-<p>We may share your data with trusted third-party partners and service providers, such as payment processors, analytics providers, and marketing services.</p>
-
-<h3>5. Cookies</h3>
-<p>Our website uses cookies to enhance user experience. You can control cookie settings through your browser preferences.</p>
-
-<h3>6. Data Retention</h3>
-<p>Your data will be stored for as long as necessary to fulfill the purposes mentioned in this policy.</p>
-
-<h3>7. Your Rights</h3>
-<p>You have the right to access, correct, delete, and object to the processing of your personal data. You can also request data portability.</p>
-
-<h3>8. Data Security</h3>
-<p>We implement appropriate technical and organizational measures to ensure your personal data is protected from unauthorized access or loss.</p>
-
-<h3>9. Data Transfers</h3>
-<p>Your personal data may be transferred to third countries. We ensure that these transfers comply with data protection regulations.</p>
-
-<h3>10. Changes to this Policy</h3>
-<p>We may update this privacy policy periodically. Please check this page regularly for the latest version.</p>
-
+        <p>Wir nehmen den Schutz Ihrer persönlichen Daten ernst. Diese Datenschutzerklärung erklärt, wie wir Ihre Daten auf unserer Website erheben, verwenden und schützen.</p>
+        
+        <h3>1. Verantwortlicher</h3>
+        <p>Unternehmensname: Beispielunternehmen<br>
+        Adresse: Beispielstraße 1, 12345 Beispielstadt, Deutschland<br>
+        E-Mail: info@beispiel.de</p>
+        
+        <h3>2. Erhebung von Daten</h3>
+        <p>Wir erheben personenbezogene Daten wie Name, E-Mail-Adresse und IP-Adressen, wenn Sie unsere Dienste nutzen. Diese Daten werden verarbeitet, um Ihnen unsere Dienste bereitzustellen und Ihre Benutzererfahrung zu verbessern.</p>
+        
+        <h3>3. Rechtsgrundlage</h3>
+        <p>Wir verarbeiten Ihre Daten auf Grundlage Ihrer Einwilligung, unserer vertraglichen Verpflichtungen oder unseres berechtigten Interesses, unsere Website und Dienstleistungen zu verbessern.</p>
+        
+        <h3>4. Weitergabe von Daten</h3>
+        <p>Wir können Ihre Daten mit vertrauenswürdigen Drittanbietern und Dienstleistern teilen, wie z. B. Zahlungsabwicklern, Analyseanbietern und Marketingdiensten.</p>
+        
+        <h3>5. Cookies</h3>
+        <p>Unsere Website verwendet Cookies, um die Benutzererfahrung zu verbessern. Sie können die Cookie-Einstellungen über die Einstellungen Ihres Browsers steuern.</p>
+        
+        <h3>6. Datenaufbewahrung</h3>
+        <p>Ihre Daten werden so lange gespeichert, wie es erforderlich ist, um die in dieser Datenschutzerklärung genannten Zwecke zu erfüllen.</p>
+        
+        <h3>7. Ihre Rechte</h3>
+        <p>Sie haben das Recht, auf Ihre personenbezogenen Daten zuzugreifen, diese zu berichtigen, zu löschen und der Verarbeitung zu widersprechen. Sie können auch die Übertragung Ihrer Daten anfordern.</p>
+        
+        <h3>8. Datensicherheit</h3>
+        <p>Wir setzen geeignete technische und organisatorische Maßnahmen um, um sicherzustellen, dass Ihre personenbezogenen Daten vor unbefugtem Zugriff oder Verlust geschützt sind.</p>
+        
+        <h3>9. Datenübertragungen</h3>
+        <p>Ihre personenbezogenen Daten können in Drittländer übermittelt werden. Wir stellen sicher, dass diese Übertragungen den Datenschutzbestimmungen entsprechen.</p>
+        
+        <h3>10. Änderungen dieser Erklärung</h3>
+        <p>Wir können diese Datenschutzerklärung regelmäßig aktualisieren. Bitte überprüfen Sie diese Seite regelmäßig, um die aktuelle Version zu sehen.</p>        
     </div>
 </div>
 
@@ -311,6 +311,9 @@ window.onclick = function(event) {
 }
 
 </script>
+
+
+
 <!--
     <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
