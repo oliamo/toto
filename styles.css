@@ -451,7 +451,7 @@ body {
     z-index: 1000;
     justify-content: center;
     align-items: center;
-    display: flex; /* Flexbox für Zentrierung */
+    /*display: flex; /* Flexbox für Zentrierung */
 }
 #dataContent {
     background: white;
