@@ -21,6 +21,7 @@ body {
     color: rgb(255, 252, 239);
     padding: 10px;
     display: flex;
+    border: rgb(255, 252, 239);
     justify-content: space-between;
     align-items: center;
     position: fixed;  /* Fixiert die Top-Bar oben auf der Seite */

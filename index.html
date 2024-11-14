@@ -74,6 +74,15 @@
                 <!-- <li><a href="#">AGB</a></li> -->
             </ul>
         </div>
+        <div id="impressumOverlay">
+            <div id="impressumContent">
+                <h2>Impressum</h2>
+                <p><strong>Angaben gemäß § 5 TMG (Telemediengesetz):</strong></p>
+                <p><strong>Name:</strong><br>Max Mustermann<br>(Mustername einfügen)</p>
+                <p><strong>Anschrift:</strong><br>Musterstraße 1<br>12345 Musterstadt<br>Deutschland</p>
+                <p><strong>E-Mail:</strong><br>kontakt@musterprojekt.de</p>
+            </div>
+        </div>
     </div>
 
     <div class="footer-bottom">
@@ -107,7 +116,24 @@
         }
     });
 </script>
+<!-- Impressum overlay */-->
+ <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const overlay = document.getElementById('impressumOverlay');
+    const openLink = document.getElementById('openImpressum');
 
+    openLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        overlay.style.display = 'block';
+    });
+
+    overlay.addEventListener('click', function(event) {
+        if (event.target === overlay) {
+            overlay.style.display = 'none';
+        }
+    });
+});
+ </script>
 
 </body>
 </html>
