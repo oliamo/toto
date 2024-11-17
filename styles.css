@@ -154,9 +154,9 @@ body {
     /* Stil für den Textblock */
     .text-block {
     background-color:  rgb(194, 205, 142);
-    padding: 20px;
+    padding:10px;
     margin: 10px auto;
-    width: 100%; /* Volle Breite auf mobilen Geräten */
+    width: 90%; /* Volle Breite auf mobilen Geräten */
     max-width: 900px; /* Maximal auf 900px breiten Textblock */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -169,17 +169,17 @@ body {
     .text-block h2 {
     font-size: 36px;
     color:rgb(105, 122, 0);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-align: center;
     font-family: 'frutiger', sans-serif;
     }
     
     /* Stil für das Textfeld */
 .text-field {
-    width: 100%;                         /* Textfeld auf volle Breite setzen */
+    width: 90%;                         /* Textfeld auf volle Breite setzen */
     min-height: 50px;                    /* Minimale Höhe des Textfeldes */
-    padding: 20px;
-    font-size: 16px;
+    padding: 10px;
+    font-size: 18px;
     color: rgb(105, 122, 0);
     background-color: rgb(194, 205, 142);
     border: 1px solid rgb(255, 252, 239);
@@ -204,8 +204,8 @@ body {
 /* Media Query für kleine Bildschirme (z.B. Smartphones) */
 @media (max-width: 768px) {
     .text-field {
-        padding: 10px;  /* Weniger Padding auf kleinen Geräten */
-        font-size: 14px; /* Etwas kleinere Schriftgröße auf kleinen Geräten */
+        padding: 7px;  /* Weniger Padding auf kleinen Geräten */
+        font-size: 16px; /* Etwas kleinere Schriftgröße auf kleinen Geräten */
         height: auto;    /* Höhe auf auto setzen, damit es sich an den Text anpasst */
         max-width: 100%; /* Sicherstellen, dass das Textfeld nicht breiter wird */
     }
