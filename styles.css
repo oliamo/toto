@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'frutiger';
-    src: url('FrutigerLTStd-Cn.woff') format('woff');
+    src: url('Frutiger.ttf') format('truetype');
     /* url('FrutigerLTStd-Cn.woff2') format('woff2'),
-       url('Frutiger.ttf') format('truetype');*/
+       url('FrutigerLTStd-Cn.woff') format('woff');*/
        font-weight: normal;
        font-style: normal;
     }
