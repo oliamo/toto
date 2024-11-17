@@ -113,7 +113,7 @@ body {
     margin-bottom: 30px;
     }
     /* Stil für das Bild (Logo) */
-.content .logo {
+.content logo {
     max-width: 100%;   /* Maximale Breite auf 100% setzen, damit es in den Container passt */
     height: auto;      /* Höhe wird automatisch angepasst, um das Seitenverhältnis zu wahren */
     margin: 20px 0;    /* Abstand oben und unten, damit es vom Text etwas getrennt ist */
