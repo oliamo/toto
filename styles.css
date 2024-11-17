@@ -1,9 +1,10 @@
 @font-face {
     font-family: 'frutiger';
     src: url('FrutigerLTStd-Cn.woff2') format('woff2');
+         url('FrutigerLTStd-Cn.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    color: rgb(105, 122, 0)
+    color: rgb(105, 122, 0);
     }
 
 
