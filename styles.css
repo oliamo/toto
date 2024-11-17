@@ -101,13 +101,13 @@ body {
     
     .content h1 {
     font-family: 'frutiger', sans-serif; 
-    font-size: 48px;
+    font-size: 44px;
     margin-bottom: 20px;
     color: rgb(105, 122, 0);
     }
     
     .content img {
-    width: 300px;
+    width: 340px;
     height: auto;
     margin-bottom: 30px;
     }
