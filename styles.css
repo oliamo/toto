@@ -3,9 +3,6 @@
     src: /*url('FrutigerLTStd-Cn.woff2') format('woff2'),*/
          url('FrutigerLTStd-Cn.woff') format('woff'),
          url('Frutiger.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-    color: rgb(105, 122, 0);
     }
 
 
@@ -99,7 +96,7 @@ body {
     }
     
     .content h1 {
-    font-family: 'frutiger', sans-serif;
+    font-family: 'frutiger'; /*, sans-serif;*/
     font-size: 48px;
     margin-bottom: 20px;
     color: rgb(105, 122, 0);
