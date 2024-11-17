@@ -176,7 +176,7 @@ body {
     
     /* Stil für das Textfeld */
 .text-field {
-    width: 90%;                         /* Textfeld auf volle Breite setzen */
+    width: 100%;                         /* Textfeld auf volle Breite setzen */
     min-height: 50px;                    /* Minimale Höhe des Textfeldes */
     padding: 10px;
     font-size: 18px;
