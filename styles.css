@@ -34,7 +34,8 @@ body {
     
     /* Logo (Bild) */
     .top-bar .logo {
-        height: 4%;  /* Bildhöhe an die Höhe des Balkens anpassen */
+        max-height: 40px;  /* Maximale Höhe des Logos, um es an den Balken anzupassen */
+       /* height: 60%;  /* Bildhöhe an die Höhe des Balkens anpassen */
         width: auto;   /* Breite wird automatisch angepasst, um das Seitenverhältnis zu wahren */
         margin-left: 10px;  /* Optionaler Abstand nach links */
     }
