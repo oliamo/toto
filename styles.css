@@ -5,6 +5,7 @@
        url('FrutigerLTStd-Cn.woff') format('woff');*/
        font-weight: normal;
        font-style: normal;
+       font-display: swap;
     }
 
 
@@ -111,6 +112,12 @@ body {
     height: auto;
     margin-bottom: 30px;
     }
+    /* Stil für das Bild (Logo) */
+.content .logo {
+    max-width: 100%;   /* Maximale Breite auf 100% setzen, damit es in den Container passt */
+    height: auto;      /* Höhe wird automatisch angepasst, um das Seitenverhältnis zu wahren */
+    margin: 20px 0;    /* Abstand oben und unten, damit es vom Text etwas getrennt ist */
+}
     
     .section {
     margin-top: 50px;
@@ -205,6 +212,15 @@ body {
     
     .text-block h2 {
         font-size: 28px;  /* Kleinere Schriftgröße auf mobilen Geräten */
+    }
+    /* Media Query für kleinere Bildschirme */
+    .content h1 {
+        font-size: 28px;  /* Kleinere Schriftgröße für mobile Geräte */
+    }
+
+    .content .logo {
+        max-width: 80%;  /* Bild wird auf 80% der Breite des Containers gesetzt */
+        margin: 20px auto; /* Zentriert das Bild und fügt Abstand oben und unten hinzu */
     }
 }
 
