@@ -96,7 +96,7 @@ body {
     }
     
     .content h1 {
-    font-family: 'frutiger'; /*, sans-serif;*/
+    font-family: 'frutiger'; /*, sans-serif;*/ 
     font-size: 48px;
     margin-bottom: 20px;
     color: rgb(105, 122, 0);
