@@ -302,11 +302,17 @@ body {
     max-width: 90%;
     max-height: 90%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #modal-image {
     max-width: 100%;
     max-height: 100%;
+    object-fit: contain; /* Passt das Bild an den Container an, ohne es zu verzerren */
+    width: 100%;
+    height: auto;
 }
 
 /* Schließen Button */
