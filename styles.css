@@ -299,8 +299,8 @@ body {
 
 /* Modal-Inhalt */
 .modal-content {
-    max-width: 90%;
-    max-height: 80%;
+    max-width: 100%;
+    max-height: 100%;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -308,8 +308,8 @@ body {
 }
 
 #modal-image {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 80%;
+    max-height: 80%;
     object-fit: contain; /* Passt das Bild an den Container an, ohne es zu verzerren */
     width: auto;
     height: auto;
