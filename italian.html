@@ -21,7 +21,8 @@
 
     <!-- Menü-Overlay -->
 <div id="menu" class="menu">
-    <a href="italian.html">Home</a>
+    <a href="italian.html">Home</a> 
+    <a href="#ernte">Il raccolto 2026</a>
     <a href="#oel">L' Olio</a> 
     <a href="#warumoliamo">Perché oliamo?</a> 
     <a href="#derprozess">Il Processo</a>
@@ -35,13 +36,73 @@
         <img src="Oliamo Logo.png" alt="oliamo Logo" class="logo"/>
         <h1>Buonvenuti su oliamo!</h1>
     </div>
+
+<!-- Hier kommt der Bereich, auf den du im Menü verlinken möchtest -->
+<div id="ernte" class="text-block">
+    <h2>Il raccolto di quest’anno - 2026</h2>
+    <div readonly class="text-field">
+<strong>L’olio extravergine di oliva fresco di Oliamo sulla vostra tavola: direttamente dalla Sicilia, dal raccolto 2026.
+</strong>
+Quest’anno gli alberi dell’oliveto di nonno Totó hanno prodotto poche olive. Da un anno all’altro, gli ulivi spesso danno frutti in quantità diverse. A questo si sono aggiunti l’estate molto secca e la regolare potatura di allevamento nell’oliveto. Perciò nell’oliveto di nonno Totó le olive sono state davvero poche e abbiamo acquistato anche olio d’oliva fresco da amici e conoscenti siciliani. Quest’anno possiamo così offrirvi tre diversi oli d’oliva siciliani, ognuno con la propria provenienza e il proprio blend di olive.
+
+Per tutti i nostri oli d’oliva prestiamo molta attenzione alla qualità delle olive e alla loro lavorazione. Verifichiamo personalmente le olive e seguiamo direttamente la spremitura a freddo presso il frantoio locale.
+
+Qui trovate le descrizioni degli oli d’oliva che spediremo quest’anno. Per permettervi di riconoscere quale olio contiene la vostra Bag-in-Box, abbiamo contrassegnato il coperchio con un codice: MF, MT o CB.
+Scriveteci pure <a href="mailto:oliamototo@gmail.com">un messaggio</a> e raccontateci cosa ne pensate dell’olio Oliamo di quest’anno!
+
+<strong>L’olio Oliamo originale dell’oliveto di nonno Totó a Muffoletto</strong>
+A San Cipirello, nonno Totó ha piantato una miscela speciale di Nocellara del Belice (30%), Cerasuola (30%), Biancolilla (30%) e Calamignana (10%). Da queste diverse varietà di olive nasce un olio Oliamo dal gusto intenso e ben equilibrato.
+Le confezioni di olio Oliamo dell’oliveto di nonno Totó sono contrassegnate con <strong>MF</strong>.
+
+<strong>L’olio Oliamo dell’agricoltore Matteo, di San Cipirello</strong>
+L’agricoltore Matteo utilizza solo olive selezionate e di alta qualità, provenienti da appezzamenti scelti con cura nei dintorni di San Cipirello, vicinissimi all’oliveto di nonno Totó. L’alta percentuale di Nocellara del Belice, insieme ad alcune olive Biancolilla, conferisce all’olio un gusto intenso e aromi ricchi, plasmati dalla forza del sole siciliano.
+Le confezioni di olio Oliamo di Matteo sono contrassegnate con <strong>MT</strong>.
+
+<strong>L’olio Oliamo dell’agricoltore Luciano, di Caltabellotta</strong>
+Quest’olio d’oliva è prodotto al 100% con olive Biancolilla. Si distingue per il gusto delicato e armonioso e per il suo brillante colore verde: un assaggio del sud della Sicilia.
+Le confezioni di olio Oliamo di Luciano, proveniente da Caltabellotta, sono contrassegnate con <strong>CB</strong>.
+
+Qui puoi scoprire di più sul <a href="#derprozess">processo di produzione</a> e su <a href="#warumoliamo">Oliamo</a>.
+
+</div>
+
+<!-- Galleria con immagini aggiornate del raccolto -->
+  <div>
+        <h3>Impressioni dal raccolto 2026:</h3>
+ </div>
+<div class="image-gallery">
+     <div class="gallery-item">
+        <img src="olivenhain_toto.JPG" alt="Immagine 1" class="gallery-thumbnail" onclick="openGallery(0)">
+        L’oliveto di nonno Totó.
+    </div>
+    <div class="gallery-item">
+        <img src="Nocellara.JPG" alt="Immagine 2" class="gallery-thumbnail" onclick="openGallery(1)">
+        Un’oliva Nocellara fresca.
+    </div>
+    <div class="gallery-item">
+        <img src="caltabellotta.JPG" alt="Immagine 3" class="gallery-thumbnail" onclick="openGallery(2)">
+        Oliveto nei pressi di Caltabellotta.
+    </div>
+    <div class="gallery-item">
+        <img src="olio-fresco.JPG" alt="Immagine 4" class="gallery-thumbnail" onclick="openGallery(3)">
+        Olio d’oliva fresco 2026.
+    </div>
+</div>
     
+<!-- Galerie-Overlay für die größere Ansicht -->
+<div id="gallery-modal" class="gallery-modal">
+    <span class="close-btn" onclick="closeGallery()">&times;</span>
+    <div class="modal-content">
+        <img id="modal-image" src="" alt="Großes Bild">
+    </div>
+</div>
+</div>
  
 <!-- Hier kommt der Bereich, auf den du im Menü verlinken möchtest -->
 <div id="oel" class="text-block">
     <h2>L' Olio</h2>
     <div readonly class="text-field">
-<strong>Dal frutteto di nonno Totó portiamo il sole della Sicilia direttamente sulla tua tavola - con il miglior olio extra vergine d'oliva della raccolta 2025.
+<strong>Dal frutteto di nonno Totó portiamo il sole della Sicilia direttamente sulla tua tavola - con il miglior olio extra vergine di Oliamo.
 </strong>            
 A San Cipirello, nonno Totó ha piantato una selezione pregiata di ulivi Nocellara del Belice (30%), Cerasuola (30%), Biancolilla (30%) e Calamignana (10%). Li ha curati con amore e li ha tramandati alle generazioni successive, che da allora si prendono cura del frutteto.
             
@@ -49,21 +110,21 @@ Gli alberi sono lasciati al naturale, fatta eccezione per le potature necessarie
 <!-- Se vuoi essere sicuro di avere sempre oliamo sulla tua tavola, puoi adottare un ulivo. A seconda del raccolto, ti invieremo la tua quota di olio d'oliva. --> 
 Le olive crescono nel frutteto di nonno Totó in completa libertà e purezza, riflettendosi nella genuinità e nel sapore unico del nostro olio d'oliva. In collaborazione con il frantoio di San Giuseppe Jato e un agricoltore della regione, abbiamo sviluppato un olio d'oliva meravigliosamente intenso ed equilibrato. Grazie alla lavorazione locale e alla spremitura a freddo a 25 °C, sempre entro 48 ore dalla raccolta, abbiamo prodotto un olio extra vergine di alta qualità. Puoi scoprire di più sul nostro <a href="#derprozess">processo di produzione</a> e su <a href="#warumoliamo">oliamo</a> qui.
 
-Se vuoi che il nostro oliamo arrivi presto anche sulla tua tavola, inviaci semplicemente <a href="mailto:oliamototo@gmail.com">un messaggio</a>! Saremo lieti di darti maggiori informazioni e di inviarti presto il tuo oliamo.</div>
+Se vuoi che il nostro Oliamo arrivi presto anche sulla tua tavola, inviaci semplicemente <a href="mailto:oliamototo@gmail.com">un messaggio</a>! Saremo lieti di darti maggiori informazioni e di inviarti presto il tuo Oliamo.</div>
 </div>
 <!-- Galerie mit vier Bildern -->
 <div class="image-gallery">
     <div class="gallery-item">
-        <img src="tree_olive.jpg" alt="Bild 1" class="gallery-thumbnail" onclick="openGallery(0)">
+        <img src="tree_olive.jpg" alt="Bild 1" class="gallery-thumbnail" onclick="openGallery(4)">
     </div>
     <div class="gallery-item">
-        <img src="sky.jpg" alt="Bild 2" class="gallery-thumbnail" onclick="openGallery(1)">
+        <img src="sky.jpg" alt="Bild 2" class="gallery-thumbnail" onclick="openGallery(5)">
     </div>
     <div class="gallery-item">
-        <img src="leaves.jpg" alt="Bild 3" class="gallery-thumbnail" onclick="openGallery(2)">
+        <img src="leaves.jpg" alt="Bild 3" class="gallery-thumbnail" onclick="openGallery(6)">
     </div>
     <div class="gallery-item">
-        <img src="rows.jpg" alt="Bild 4" class="gallery-thumbnail" onclick="openGallery(3)">
+        <img src="rows.jpg" alt="Bild 4" class="gallery-thumbnail" onclick="openGallery(7)">
     </div>
 </div>
 
@@ -80,7 +141,7 @@ Se vuoi che il nostro oliamo arrivi presto anche sulla tua tavola, inviaci sempl
     <div readonly class="text-field">
 Da molti anni gli ulivi di nonno Totó prosperano sotto il sole della Sicilia a San Cipirello, ma da anno in anno producono sempre meno olive. Da quando nonno Totó non si occupa più direttamente degli alberi e della sua terra, e ha lasciato la terra con le sue piante in eredità ai suoi discendenti, la cura degli alberi è progressivamente diminuita, portando a una riduzione della produzione.
 
-Per preservare il paesaggio culturale della Sicilia e garantire la sopravvivenza degli ulivi di nonno Totó per molti anni a venire, abbiamo deciso di dedicarci nuovamente alla cura del frutteto e siamo felici di farvi assaporare i primi frutti di questo lavoro con oliamo 2024.
+Per preservare il paesaggio culturale della Sicilia e garantire la sopravvivenza degli ulivi di nonno Totó per molti anni a venire, abbiamo deciso di dedicarci nuovamente alla cura del frutteto e siamo felici di farvi assaporare i frutti di questo lavoro con Oliamo.
 <!--Quest'anno ci siamo impegnati per raccogliere più olive e farvi provare l'olio di nonno Totó. -->
 La combinazione unica delle olive del frutteto di nonno Totó rende il nostro oliamo una vera delizia. Nella produzione lavoriamo a stretto contatto con partner locali per creare un olio d'oliva ecologicamente prezioso e prodotto in modo sostenibile.
 
@@ -122,7 +183,7 @@ Se vuoi che oliamo arrivi presto anche sulla tua tavola, inviaci semplicemente <
 <!-- Galerie mit einem Bild -->
 <div class=".image-gallery-single">
         <div class="gallery-item-single">
-        <img src="oliveto.jpg" alt="Bild 5" class="gallery-thumbnail-single" onclick="openGallery(4)">
+        <img src="oliveto.jpg" alt="Bild 5" class="gallery-thumbnail-single" onclick="openGallery(8)">
     </div>
 </div>
 
@@ -145,16 +206,16 @@ Le olive che si trovano sulle reti vengono raccolte su un rimorchio e portate al
 <!-- Galerie mit vier Bildern -->
 <div class="image-gallery">
     <div class="gallery-item">
-        <img src="leaveolive.jpg" alt="Bild 6" class="gallery-thumbnail" onclick="openGallery(5)">
+        <img src="leaveolive.jpg" alt="Bild 6" class="gallery-thumbnail" onclick="openGallery(9)">
     </div>
     <div class="gallery-item">
-        <img src="harvest.jpg" alt="Bild 7" class="gallery-thumbnail" onclick="openGallery(6)">
+        <img src="harvest.jpg" alt="Bild 7" class="gallery-thumbnail" onclick="openGallery(10)">
     </div>
     <div class="gallery-item">
-        <img src="transporting.jpg" alt="Bild 8" class="gallery-thumbnail" onclick="openGallery(7)">
+        <img src="transporting.jpg" alt="Bild 8" class="gallery-thumbnail" onclick="openGallery(11)">
     </div>
     <div class="gallery-item">
-        <img src="oil.jpg" alt="Bild 9" class="gallery-thumbnail" onclick="openGallery(8)">
+        <img src="oil.jpg" alt="Bild 9" class="gallery-thumbnail" onclick="openGallery(12)">
     </div>
 </div>
 
@@ -277,6 +338,10 @@ Indirizzo: Via Esempio 1, 12345 Città Esempio, Italia<br> -->
 <script>
     // Bilder für die Galerie (kannst du durch echte URLs ersetzen)
 const images = [
+    "olivenhain_toto.JPG",
+    "Nocellara.JPG",
+    "caltabellotta.JPG",
+    "olio-fresco.JPG",
     "tree_olive.jpg",
     "sky.jpg",
     "leaves.jpg",
